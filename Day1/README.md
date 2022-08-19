@@ -21,7 +21,7 @@
 
 2. 자바 JDK8 다운
 ---
-(https://www.oracle.com/kr/java/technologies/javase/javase8-archive-downloads.html)
+https://www.oracle.com/kr/java/technologies/javase/javase8-archive-downloads.html
 
 
 3. 환경변수 설정 
@@ -37,6 +37,6 @@
 
 5. 이클립스 22년 6월버전 다운
 ---
-    [이클립스 다운 링크] (https://www.eclipse.org/downloads/)
+https://www.eclipse.org/downloads/
 
 

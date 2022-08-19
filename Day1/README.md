@@ -29,6 +29,15 @@ https://www.oracle.com/kr/java/technologies/javase/javase8-archive-downloads.htm
     java폴더 안에서 컴파일 할 필요없이 어디서든 실행 가능하게 하도록 만들기
 
 
+
+
+
+
+
+
+
+
+
 ### 4. 자바 메모리 구조 
 ---
 ![이미지링크](https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fcafeptthumb3.phinf.naver.net%2F20130524_83%2Fzeroday7_1369363867407vYoPA_PNG%2Fjvm_exe.PNG%3Ftype%3Dw740%22&type=cafe_wa740)

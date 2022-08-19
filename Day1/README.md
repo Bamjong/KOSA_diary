@@ -16,20 +16,17 @@
     기본적으로 JDK를 깔면 JAVA 개발이 가능합니다. 메모장에 코드 작성하고 컴파일하면 프로그램이 실행됩니다. 하지만 우리가 메모장에
     코딩을 할 순 없으니 이클립스와 같은 IDE를 사용합니다.
 
-![이미지링크](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd1gYvX%2FbtqAiXbOybR%2FITzib2xhpHXYCReizDW0X0%2Fimg.png%22&type=cafe_wa800)
+![이미지링크](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd1gYvX%2FbtqAiXbOybR%2FITzib2xhpHXYCReizDW0X0%2Fimg.png%22&type=cafe_wa800)  
 
 
 
 ### 2. 자바 JDK8 다운
 ---
-https://www.oracle.com/kr/java/technologies/javase/javase8-archive-downloads.html
-<br></br>
-
+https://www.oracle.com/kr/java/technologies/javase/javase8-archive-downloads.html  
 
 ### 3. 환경변수 설정 
 ---
-    java폴더 안에서 컴파일 할 필요없이 어디서든 실행 가능하게 하도록 만들기
-<br></br>
+    java폴더 안에서 컴파일 할 필요없이 어디서든 실행 가능하게 하도록 만들기  
 
 ### 4. 자바 메모리 구조 
 ---

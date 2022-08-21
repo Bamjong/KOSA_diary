@@ -44,7 +44,8 @@ https://www.oracle.com/kr/java/technologies/javase/javase8-archive-downloads.htm
 
 ### 6. 이클립스를 통해 코딩해보기
 
-```public class Ex01 {
+```java
+public class Ex01 {
 	public static void main(String[] args) {
 		System.out.println("Hello");
 	}

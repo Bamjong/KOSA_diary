@@ -265,6 +265,29 @@ public class Ex04_DataType {
 		// 위에서 했던 것처럼.....
 		//큰 것을 작은 강제 형변환 (데이터 손실)
 
+
+        /*
+		 1. 할당에서 변수가 가지고 있는 값을 보지말고 변수의 타입을 보자
+		 2. 변수의 타입 크기를 확인하자
+		 3. 큰타입에는 작은 타입의 값을 넣을 수 있다
+		 4. 작은 타입에는 큰 타입을 넣고 싶다면 강제로 (casting) 책임은 여러분이...
+		 */
+		
+		//TIP) java 에서 특수 문자 처리
+		//이스케이프 문자 : 특정 문자 앞에 \를 붙히면 
+		char sing = '\'';
+		
+		//Quiz : 홍"길"동 이라는 문자열을 표현하고 싶어요
+		String name3 = "홍\"길\"동";
+		
+		System.out.println(name3);
+		
+		String str3 = "1000";
+		String str4 = "10";
+		String result = str3 + str4; // 100010
+		System.out.println(result);
+		
+		System.out.println("");
 	}
     
 

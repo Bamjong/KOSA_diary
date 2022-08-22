@@ -134,3 +134,63 @@ public class Ex03_Object_Variable {
 
 }
 ```
+
+### 4. 자바의 기본타입(*Ex04_DataType)
+---
+
+```java
+/*
+1. 자바가 제공하는 기본 타입(시스템 타입 : 원시타입) >> 8가지
+2. 8가지 기본 타입 [값을 저장] 하는 타입
+3. 숫자 > 정수 >(음의정수, 0 , 양의 정수) byte (8bit)
+									 char 한문자를 표현하는 자료형 (영문자, 특수문자, 공백) 1byte (한글 1자 > 2byte)
+									 short (c언어 호환성)
+									 int (-21 ~ +21억 정수 : 4byte
+									 long (8byte)
+
+   숫자 > 실수(부동소수점) >	 float double
+   
+   논리 > 참, 거짓 > true,false	boolean
+   
+   
+   String name = "홍길동 바보"; >> String 클래스이다 (참조 타입) String str = new String();
+   
+   기본타입 8가지 + String >> 9가지를 가지고 데이터 표현
+   
+   
+   자바타입
+   1. 값타입 : 8가지 기본 > int i = 100; int j = 200;...					value type
+   2. 참조타입(주소값) : 클래스, 배열 : 변수에 값이 저장되는 것이 아니라 주소값이 저장 ref type
+
+ */
+
+
+// class == 설계도 == Data Type
+class Car2{	//Car2는 데이터 타입, Car2는 설계도 이다 >> 구체화 >> 메모리에 올리는 작업 필요 >> new
+	String color;
+	int window;
+}
+
+
+public class Ex04_DataType {
+
+	public static void main(String[] args) {
+		String str = "홍길동"; //문자열 데이터를 담을 수 있는 타입
+		int age = 100;
+		
+		Car2 c; // c는 main함수 안에 있는 지역변수
+		//System.out.println(c); // 지역변수 초기화 실행 불가능
+		//c라는 변수의 초기화는 >> 주소값을 가지게 함
+		c = new Car2();
+		System.out.println("c의 주소값 출력 : " + c);
+		Car2 c2 = new Car2();
+		c2.window = 100;
+		c2.color = "gold";
+		
+		System.out.println(c2.window + " " + c2.color);
+
+	}
+
+}
+
+```

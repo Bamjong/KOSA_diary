@@ -191,6 +191,80 @@ public class Ex04_DataType {
 		
 		System.out.println(c2.window + " " + c2.color);
 
+        /////////////////////////////////////////////////////////////////////////////////////
+
+        int i = 10; // **
+		
+		int j ;
+		j = 20;
+		
+		int k;
+		k = j; //POINT (값할당 j변수가 가지는 값을 k에게 할당)
+		System.out.println("k: " + k); // 20
+		k= 300;
+		System.out.println("k: "+ k);
+		System.out.println("j값은 변화 없다: " + j);
+		
+		// int p , q , g; //좋아하지 않아요
+		// 이런 경우는 Array : int[] arr = new int[3];
+		
+		// int (-21억 ~ 21억)
+		int p = 100000000;
+		//int p2 = 10000000000;
+		//p2가 정수(int) .... 당근 안되겠지 예상 ...
+		//The literal 10000000000 of type int is out of range
+		//개발자가 직접 입력한 값 (있는 그대로) 정수값은 int 그릇에 담아서 처리
+		//나는 4byte로 너의 값을 담고있는데 니가 큰 값을 입력하면 나는 담을 수 없어 ...
+		
+		//1. 해결방법
+		long l = 10000000000l; // 리터값을 long 담아서 할당
+		long l2 = 100; // 100 리너탁ㅄ은 int 그릇안에
+		//작은 타입값을 큰 타입에 넣는 것은 문제가 안된다...
+
+		//int p2 = 10000000000;
+		int p2 = (int) 10000000000l; // 캐스팅 >> 타입변환
+		System.out.println(p2);  // 1410065408
+		//정상적인 해결 방법이 아니다 ... 버려지는 값 (쓰레기 값)
+		
+		int p3 = (int)1000l; //캐스팅을 통해서 타입 일치
+		System.out.println(p3);
+		
+		// char 2byte 정수값
+		// 한 문자를 표현하기 위해서 만든 자료형
+		// 영문자, 특수문자, 공백, 한글, 한문자 ... 표준화 ...
+		// 문자열 (문자의 집합) : "홍길동"				String name = "홍길동";
+		// 문자	 (한문자)		: 'A', '홍';				char ch = '홍';
+		
+		char single = '가';
+		System.out.println(single);
+		// char s = 'AB'; 예외 컴파일도 안돼요
+
+        /////////////////////////////////////////////////////////////////////////////////////////
+        
+		//char 정수 타입
+		//char 문자를 저장하지만 내부적으로 정수값을 가지고 있다
+		//정수값은 아스키 코드표를 기반으로 하고 있다
+		//정수 호환 ...
+		int intch = 'A'; //int intch= (int)'A';
+		//내부적으로 자동 형 변환이 일어나서 ..... 암시적 (묵시적)
+		System.out.println("intch : " + intch);
+
+		char ch2 = 'a';
+		System.out.println(ch2);
+		int intch2 = (char) ch2; //내부적으로 처리 되지만... casting직접 처리
+		System.out.println(intch2);
+		
+		int intch3 = 65;
+		char ch3 = (char)intch3;
+		System.out.println(ch3);
+		
+		//속지말자 (할당에 있으서 값을 보지말고 그 값을 담고 있는 Type을 보자)
+		//명시적 형변환 , 암시적 형 변환
+		//강제, 명시적 형변환
+		//key point : 형변환시 손실 데이터 고민
+		// 위에서 했던 것처럼.....
+		//큰 것을 작은 강제 형변환 (데이터 손실)
+
 	}
     
 

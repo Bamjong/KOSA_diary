@@ -1,5 +1,5 @@
 # 2022년 8월 22일 월요일
-</br>
+<br>
 
 <!-- ## 혼자 공부하는 자바 기반 수업 진행
 </br> -->
@@ -27,7 +27,7 @@ public class 클래스 이름 {
 	
 }
 ```
-</br>
+<br>
 
 ### 2. 변수가 선언되는 위치 (scope : 유효범위)
 ---
@@ -41,7 +41,7 @@ public class 클래스 이름 {
     자바는 하나의 물리적인 파일안에 여러개의 클래스를 사용가능 ... (연습용으로)
     실 개발할때는 .... 하나의 파일에 하나의 클래스 사용 일반적
 
-</br>
+<br>
 
 ``` java
 class Car{  //설계도를 사용하기 위해서는 구체화 ... 메모리 위에다가 만드는 행위를 통해서 (연산자 new)
@@ -73,7 +73,7 @@ class Car{  //설계도를 사용하기 위해서는 구체화 ... 메모리 위
 	}
 }
 ```
-
+<br>
 
 ### 3. 자바 메모리 주소 (*Ex03_Object_Variable)
 ---
@@ -134,6 +134,8 @@ public class Ex03_Object_Variable {
 
 }
 ```
+</br>
+
 
 ### 4. 자바의 기본타입(*Ex04_DataType)
 ---
@@ -143,10 +145,10 @@ public class Ex03_Object_Variable {
 1. 자바가 제공하는 기본 타입(시스템 타입 : 원시타입) >> 8가지
 2. 8가지 기본 타입 [값을 저장] 하는 타입
 3. 숫자 > 정수 >(음의정수, 0 , 양의 정수) byte (8bit)
-									 char 한문자를 표현하는 자료형 (영문자, 특수문자, 공백) 1byte (한글 1자 > 2byte)
-									 short (c언어 호환성)
-									 int (-21 ~ +21억 정수 : 4byte
-									 long (8byte)
+    char 한문자를 표현하는 자료형 (영문자, 특수문자, 공백) 1byte (한글 1자 > 2byte)
+    short (c언어 호환성)
+    int (-21 ~ +21억 정수 : 4byte
+    long (8byte)
 
    숫자 > 실수(부동소수점) >	 float double
    
@@ -192,5 +194,11 @@ public class Ex04_DataType {
 	}
 
 }
-
 ```
+<br>
+
+
+
+![이미지](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdthumb-phinf.pstatic.net%2F%3Fsrc%3D%2522http%253A%252F%252Fcafeptthumb3.phinf.naver.net%252F20150730_13%252Fi7027_1438213266712fjGBw_PNG%252F%2525C0%2525DA%2525B7%2525E1%2525C7%2525FC.PNG%253Ftype%253Dw740%2522%26amp%3Btype%3Dcafe_wa740%22&type=cafe_wa800)
+
+

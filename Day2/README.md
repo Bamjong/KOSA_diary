@@ -192,6 +192,7 @@ public class Ex04_DataType {
 		System.out.println(c2.window + " " + c2.color);
 
 	}
+![이미지](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdthumb-phinf.pstatic.net%2F%3Fsrc%3D%2522http%253A%252F%252Fcafeptthumb3.phinf.naver.net%252F20150730_13%252Fi7027_1438213266712fjGBw_PNG%252F%2525C0%2525DA%2525B7%2525E1%2525C7%2525FC.PNG%253Ftype%253Dw740%2522%26amp%3Btype%3Dcafe_wa740%22&type=cafe_wa800)
 
 }
 ```
@@ -199,6 +200,6 @@ public class Ex04_DataType {
 
 
 
-![이미지](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdthumb-phinf.pstatic.net%2F%3Fsrc%3D%2522http%253A%252F%252Fcafeptthumb3.phinf.naver.net%252F20150730_13%252Fi7027_1438213266712fjGBw_PNG%252F%2525C0%2525DA%2525B7%2525E1%2525C7%2525FC.PNG%253Ftype%253Dw740%2522%26amp%3Btype%3Dcafe_wa740%22&type=cafe_wa800)
+
 
 

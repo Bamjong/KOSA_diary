@@ -30,15 +30,16 @@ public class 클래스 이름 {
 </br>
 
 ### 2. 변수가 선언되는 위치 (scope : 유효범위)
-1. instance variable : 객체변수		 >> class Car { int number = 2000;}
-2. local variable	 : 지역변수(함수안에) >> class Car { public void run() { int speed = 0; }}
-3. 함수안에 제어블럭(if, for) 안에 있는 변수	 >> class Car { public void run() { for(int i = 0....}}
-4. static variable	 : 공유자원(객체간)	 >> class Car { public static num = 100;)
+---
+    1. instance variable : 객체변수		 >> class Car { int number = 2000;}
+    2. local variable	 : 지역변수(함수안에) >> class Car { public void run() { int speed = 0; }}
+    3. 함수안에 제어블럭(if, for) 안에 있는 변수	 >> class Car { public void run() { for(int i = 0....}}
+    4. static variable	 : 공유자원(객체간)	 >> class Car { public static num = 100;)
 
-class 설계도이다 == class Type이다 (여러개의 의미있는 작은 타입을 가지는 큰 타입) : 사용자 정의 타입
+    class 설계도이다 == class Type이다 (여러개의 의미있는 작은 타입을 가지는 큰 타입) : 사용자 정의 타입
 
-자바는 하나의 물리적인 파일안에 여러개의 클래스를 사용가능 ... (연습용으로)
-실 개발할때는 .... 하나의 파일에 하나의 클래스 사용 일반적
+    자바는 하나의 물리적인 파일안에 여러개의 클래스를 사용가능 ... (연습용으로)
+    실 개발할때는 .... 하나의 파일에 하나의 클래스 사용 일반적
 
 </br>
 

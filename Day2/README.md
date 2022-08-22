@@ -272,6 +272,8 @@ public class Ex04_DataType {
 		 3. 큰타입에는 작은 타입의 값을 넣을 수 있다
 		 4. 작은 타입에는 큰 타입을 넣고 싶다면 강제로 (casting) 책임은 여러분이...
 		 */
+
+        //////////////////////////////////////////////////////////////////////////////////////
 		
 		//TIP) java 에서 특수 문자 처리
 		//이스케이프 문자 : 특정 문자 앞에 \를 붙히면 
@@ -286,8 +288,62 @@ public class Ex04_DataType {
 		String str4 = "10";
 		String result = str3 + str4; // 100010
 		System.out.println(result);
+
+        //Quiz C:\Temp 문자열을 String 변수에 담아서 화면에 출력하세요
+		String path = "C:\\Temp";
+		System.out.println(path);
 		
-		System.out.println("");
+		
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		
+		//실수형 (부동소수점)
+		//float 4byte
+		//double 8byte // 실수 리터럴은 기본 타입 double
+		
+		double f = 3.14; //
+
+		float f2 = 1.123456789f; //float 타입에 담고 싶다면 무조건 접미사 F, f
+		//대략적으로 7자리 소수 표현
+		//반올림 default
+		System.out.println("f2 : " + f2);
+		//f2 : 1.12345678
+		
+		double d = 1.123456789123456789;
+		//대략 16자리 소수 표현
+		//반올림 default
+		System.out.println("d : " + d);
+		//d : 1.1234567891234568
+		
+		System.out.println((byte)128); //128 byte 표현이 안돼요
+		//byte 타입 : -128 ~ 127 //overflow 순환
+		
+		byte q = (byte)129;
+		System.out.println(q);
+		
+		//정수와 실수
+		double d2 = 100;
+		System.out.println(d2); //100.0
+		
+		//Quiz
+		double d3 = 100;
+		int i5 = 100;
+		int result2 = (int)(d3 + i5); // 데이터 손시을 가져 올 수도 있다.
+		double result3 = d3 + i5; //데이터의 손실을 가져오지 않는다.
+		
+		System.out.println(result2);
+		System.out.println(result3);
+		//Today point
+		//1. 큰타입 + 작은 타입 >> 큰타입
+		//2. 타입간 변환 >> 변수가 가지는 값을 보지 말고 변수의 타입을 보고 판단하자
+		//3. 명시적 형 변환시 손실데이터 고민
+		
+		int i6 = 10;;
+		byte b2 = (byte)i6; //강제적 형변환
+		
+		byte b3 = 20;
+		int i7 = b3; //컴파일러가 내부적으로 자동 형변환 int i7 = (int)b3;
+		
 	}
     
 

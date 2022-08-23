@@ -78,7 +78,7 @@ public class Ex05_Ref_Type {
 
 ```
 
-### 4.연산자 (*Ex06_Operation)
+### 4.연산자, 제어문 (*Ex06_Operation)
 ---
 
 ```java

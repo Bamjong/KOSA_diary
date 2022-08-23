@@ -6,7 +6,7 @@
 
 ![이미지링크](https://t1.daumcdn.net/cfile/tistory/993CCF4B5F17C75211)
 
-    Git 구조
+## Git 구조
 
     Git은 내 컴퓨터에서만 운영해도 되지만 거의 99%는 원격서버와 같이 연계해서 협업을 하며 사용합니다. 
 

@@ -68,6 +68,9 @@ public class Ex05_Ref_Type {
 		System.out.println("apt2 : " + apt2); // 주소값
 		
 		Apt2 ssapt = apt2; // 주소값을 할당 ... ssapt 변수는 apt2 가지고 있는 주소값으로 할당
+		ssapt.door = 100; // .연산자는 주소를 찾아가는 연산자
+		
+		System.out.println("apt2 바라보는 door : " + apt2.door); //apt2 바라보는 door : 100
 
 	}
 
@@ -105,11 +108,38 @@ public class Ex06_Operation {
 		int i2 = 5;
 		int j2 = 4;
 		int result2 = i2 + ++j2;
-		System.out.println("result2 : " + result2 + " j2: " + j2); // result2 : 10 ,  j2: 5
+		System.out.println("result2 : " + result2 + " j2: " + j2); // result2: 10 ,  j2: 5
 		
 		result2 = i2 + j2++;
-		System.out.println("result2 : " + result2 + " j2: " + j2);
+		System.out.println("result2 : " + result2 + " j2: " + j2); // result2: 10 ,  j2: 6
 
+
+		
+		/////////////////////////////////////////////////////////
+		
+		
+		byte b = 100;
+		byte c = 1;
+		
+		//byte d = b
+		
+		//byte d = b + c;
+		
+		/*
+		 Today Point
+		 
+		 1. 정수의 모든 연산은 [int] 타입 변환 후 처리
+		 ex)	byte = short => 컴파일러가 내부적으로 int + int
+		 		char + char => 컴파일러가 내부적으로 int + int
+		 		연산 처리시
+		 		정수의 연산에서 int 보다 작은 타입은 int변환 연산 (long 제외)
+		 		byte, char, short >> 연산시에는 > int방에 넣어서 계산 > int
+		 		
+		 		char + int >> int + int
+		 		int + long >> long + long 예외적으로 .....
+		 		
+		 		정수 + 정수 >> 타입의 크기와 상관없이 >> 실수 승자
+		 */
 	}
 
 }

@@ -140,8 +140,195 @@ public class Ex06_Operation {
 		 		
 		 		정수 + 정수 >> 타입의 크기와 상관없이 >> 실수 승자
 		 */
+		char c2 = '!';
+		 char c3 = '!';
+		 int result6 = c2 + c3;
+		 System.out.println("result6 : " + result2);
+		 
+		 ////////////////////////////////////////////////////////////////////////////////////////////
+		 
+		 //제어문
+		 //중소기업 시험문제 (구구단 출력) >> 삼각형 별찍기 >> 연습
+		 
+		 int sum = 0; //local variable
+		 for (int j = 0; j <= 100; j++) {
+			//sum += j; //sum = sum + j;
+			if (j % 2 == 0) {  //짝수라면
+				sum += j; //짝수의 합 (1~100)
+			}
+		}
+		System.out.println("sum: " + sum); 
+		
+		//== 연산자 (값을 비교하는 연산자)
+		   if(10 == 10.0f) { //타입을 비교하는 것이 아니고 가지고 있는 값을 비교
+			   System.out.println("true");
+		   }else {
+			   System.out.println("false");
+		   }
+		   
+		   // ! 부정 연산자 
+		   if('A' != 65) { //같지 않니
+			   System.out.println("어 같지 않아 : true");
+		   }else {
+			   System.out.println("어 같은 값이야 : false");
+		   }
+		   
+		   //암기하자 (Today point)
+		   //연산자중에서 제어문역할을 하는 ...녀석
+		   //삼항연산자
+		   int p = 10;
+		   int k = -10;
+		   int result8 = (p == k) ?  p : k;
+		   
+		   //위 코드를 if문을 사용해서 처리하세요
+		   int result9=0;
+		   if(p == k) {
+			  result9 = p;
+		   }else {
+			  result9 = k;
+		   }
+		   
+		   //진리표
+		   //논리연산
+		   //0 : false
+		   //1 : true
+		   
+		   /*       OR 연산   ,  AND 연산
+		     0 0      0          0
+		     0 1      1          0 
+		     1 0      1          0
+		     1 1      1          1
+		     
+		    DB (Oracle) SQL언 자연어 (인간이 ...)
+		    select *
+		    from emp
+		    where job='IT' and sal > 2000 (그리고 둘다 참인 경우)
+		      
+		    select *
+		    from emp
+		    where job='IT' or sal > 2000  (이거나 또는 둘중에 하나만 참이어도 만족)
+		      
+		    연산자(비트)
+		    | or연산
+		    & and 연산
+		    
+		    || 논리연산(OR)
+		    && 논리연산(AND)  
+		      
+		    */
 	}
 
 }
+
+```
+
+### 5.제어문, 대입연산자 (*Ex07_Operation)
+---
+
+```java
+public class Ex07_Operation {
+
+	public static void main(String[] args) {
+		/*
+		 * 	대입연산자
+		 *  += , -= , *=, /=
+		 */
+		
+		/*
+		 * 간단한 학점 계산기
+		 * 학점: A+ , A- , B+ , B- , .....F
+		 * 점수 : 94
+		 * 
+		 * 판단기준 90점이 이상인지 >> A 부여
+		 * 판단 95점 이상 >> A+
+		 * 아니라면 >> A-
+		 * 
+		 * 84 일단 80점이 이상 > B
+		 * 판단 85 이상 >> B+
+		 * 아니라면 >> B-
+		 * 
+		 * if문을 사용해서 학점 계산을 하세요
+		 */
+		System.out.println("'C' 이하는 다 'F' 입니다.");
+		
+		
+		int score = (int)(Math.random() * 100);
+		String grade = ""; //A+, A- 를 담는 변수
+		System.out.println("당신의 점수는 : " + score);
+		
+		grade = score >= 95 ? "A+" :
+			score >= 90 ? "A-" :
+			score >= 85 ? "B+" :
+			score >= 80 ? "B-" : "F";
+
+			System.out.println("당신의 등급은: " + grade);
+			
+
+
+		}
+
+	}
+
+
+		
+		
+		
+		// 제일 간단하게
+
+//		if (score >= 95) {
+//			grade = "A+";
+//		} else if (score >= 90) {
+//			grade = "A-";
+//		} else if (score >= 85) {
+//			grade = "B+";
+//		} else if (score >= 80) {
+//			grade = "B-";
+//		}
+		
+//////////////////////////////////////////////////////////////////		
+
+		// if if
+		
+//		if (score >= 90) {
+//			if (score >= 95) {
+//				grade = "A+";
+//			} else {
+//				grade = "A-";
+//			}
+//		} else if (score >= 80) {
+//			if (score >= 85) {
+//				grade = "B+";
+//			} else {
+//				grade = "B-";
+//			}
+//		}
+		
+//////////////////////////////////////////////////////////////////	
+//////////////////////////////////////////////////////////////////			
+
+		//if + 삼항연산
+				
+//		if(score >= 90) {
+//				grade="A";
+//				grade = (score>=95) ? (grade+="+") :(grade+="-");
+//			}else if (score >= 80){
+//				grade="B";
+//				if(score >= 85) {
+//					grade+="+";
+//				}else {
+//					grade+="-";
+//				}
+//			}else if (score >= 70) {
+//				grade="C";
+//				if(score >= 75) {
+//					grade+="+";
+//				}else {
+//					grade+="-";
+//				}
+//			}else {
+//				grade="F";
+//			}
+		
+//////////////////////////////////////////////////////////////////				
 
 ```

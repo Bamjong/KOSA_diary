@@ -111,7 +111,7 @@ public class Ex06_Operation {
 		System.out.println("result2 : " + result2 + " j2: " + j2); // result2: 10 ,  j2: 5
 		
 		result2 = i2 + j2++;
-		System.out.println("result2 : " + result2 + " j2: " + j2); // result2: 10 ,  j2: 6
+		System.out.println("result2 : " + result2 + " j2: " + j2); // result2: 10 ,  j2: 6 
 
 
 		

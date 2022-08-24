@@ -8,6 +8,8 @@
 
     ( 예를 들면 : 가위=> 1 , 바위 => 2 , 보 => 3)
 
+
+### Main.java파일을 적음
 ```java
 import java.util.Scanner;
 

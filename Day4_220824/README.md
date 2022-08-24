@@ -1,21 +1,22 @@
 # 2022년 8월 24일 수요일
 <br>
 
-### 1. Scanner 입출력 클래스 
+### 1. Scanner 입출력 클래스 (*Ex08_printf_format)
 ---
 ```java
       입력받기 (cmd) 사용자가 입력한 값을 ...
 	  Scanner sc = new Scanner(System.in);
 	  String value = sc.nextLine();
-	  입력하고 엔터를 칠때까지 대기 (프로그램 종료 되지않고 계속 대기)
-	  입력한 값을 문자열 전달해주어요 ^^
+	  //입력하고 엔터를 칠때까지 대기 (프로그램 종료 되지않고 계속 대기)
+	  //입력한 값을 문자열 전달해주어요 ^^
 	  System.out.println(value);
 	  
 	  int number = sc.nextInt();
 	  System.out.println("number : " + number);
 	  
-	  권장사항 : Int로 받기보단 nextLine() read 타입을 바꾸자
-	  
+	  //권장사항 : Int로 받기보단 nextLine() read 타입을 바꾸자
+```
+---
 	  Today's Point
 	  
 	  [문자를] => 숫자를 (정수, 실수)
@@ -27,21 +28,16 @@
 	  String str = "+"; 이런 값이 있다면
 	  if(str == "+") 하지 마시고
 	  if(str.equals("+")) 하시면 됩니다
-	  
-      */
-      Scanner sc = new Scanner(System.in);
       
-      System.out.println("숫자를 입력하세요");
-      int number = Integer.parseInt(sc.nextLine());
-      System.out.println("정수값 : " + number);
-      
-```
+<br>
 
 
-
-
-### 2. case문, for문
+### 2. case문, for문(*Ex10_Statement)
 ---
+	제어문 
+		* 조건문 : if (3가지) , switch(조건){case 값 ... break} 
+		* 반복문 : for (반복횟수가 명확) , while(진위) {} , do{} ~ while{}
+		* 분기문 : break(블럭탈출) , continue(아래 구문 skip)
 
 ```java
 import java.util.Iterator;
@@ -49,33 +45,6 @@ import java.util.Iterator;
 public class Ex10_Statement {
 
 	public static void main(String[] args) {
-		/*
-		 * 제어문 
-		 * 조건문 : if (3가지) , switch(조건){case 값 ... break} 
-		 * 반복문 : for (반복횟수가 명확) , while(진위) {} , do{} ~ while{}
-		 * 분기문 : break(블럭탈출) , continue(아래 구문 skip)
-		 */
-		int count = 0;
-		if (count < 1) {
-			System.out.println("true");
-		}
-		
-		if (count < 1) {
-			System.out.println("true");
-		}
-		
-		char data = 'A';
-		switch (data) {
-		case 'A':
-			System.out.println("문자 비교 같아요");
-			break;
-		case 'B':
-			System.out.println();
-
-		default:System.out.println("나머지 처리...");
-			break;
-		}
-		
 		//for문
 		//1~100 누적합
 		int sum = 0;
@@ -83,7 +52,7 @@ public class Ex10_Statement {
 			System.out.println("i : " + i);
 			sum += i;
 		}
-		
+
 		//1~5까지의 합
 		//for문과 while 쓰지 말고
 		//개수 * (시작 + 끝) /2
@@ -98,7 +67,6 @@ public class Ex10_Statement {
 		}
 		System.out.println(sum2);
 		
-		
 		//for문 안에 if문을 사용해서 1~1000까지의 합을 구하세요(짝수)
 		int sum3 = 0;
 		for (int i = 1; i <= 1000; i++) {
@@ -110,8 +78,6 @@ public class Ex10_Statement {
 		}
 		System.out.println(sum3);
 		
-		
-		
 		//입사시험 (구구단)
 		//중첩 for ....
 		//한개의 값을 고정 ... 반복(2 1~9, 3 1~9)
@@ -121,8 +87,6 @@ public class Ex10_Statement {
 			}
 			System.out.println();
 		}
-		
-		
 		
 		// for + (분기문) continue, break
 		// Today's point : continue(아래 구문 skip) , break(for , while 블럭 탈출)
@@ -136,25 +100,22 @@ public class Ex10_Statement {
 			System.out.println();
 		}
 		
-		
 		//100부터 0 까지 출력 .. 증가감 --i
 		for (int i = 100; i >= 0; i--) {
 			System.out.println(i);
-			
 		}
-		
-		
-		
 	}
-
 }
 
 ```
 
 
 
-### 3. while문
+### 3. while문(*Ex11_Statement)
 ---
+	for(;;){}
+	* while(true) {if (조건) break;}
+	* do ~ while : 일단 한번은 강제적으로 수행 하고 ... 그리고 조건을 보고 판단해라
 
 ```java
 import java.util.Scanner;
@@ -228,10 +189,7 @@ public class Ex11_Statement {
 			System.out.println("숫자 입력하세요 (0~9): ");
 			inputdata = Integer.parseInt(sc.nextLine()); 
 		} while (inputdata >= 10); //true가 되면 계속 do문 실행
-		
 		System.out.println("당신이 입력한 숫자는: " + inputdata);
-		
-		
 	}
 }
 ```

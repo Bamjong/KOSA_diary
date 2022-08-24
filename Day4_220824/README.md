@@ -1,8 +1,20 @@
 # 2022년 8월 24일 수요일
 <br>
 
-### 1. Scanner 입출력 클래스 (*Ex08_printf_format)
+### 1. Scanner 입출력 클래스 (*01_Ex08_printf_format)
 ---
+	  Today's Point
+	  
+	  [문자를] => 숫자를 (정수, 실수)
+	  Integer.parseInt("11111") ->> 정수 ->> 11111
+	  Float.parseFloat("3.14") ->> 실수 ->> 3.14
+	  
+	  문자열의 비교는 == 를 쓰지 않아요
+	  그래서 일단
+	  String str = "+"; 이런 값이 있다면
+	  if(str == "+") 하지 마시고
+	  if(str.equals("+")) 하시면 됩니다
+
 ```java
       입력받기 (cmd) 사용자가 입력한 값을 ...
 	  Scanner sc = new Scanner(System.in);
@@ -16,23 +28,11 @@
 	  
 	  //권장사항 : Int로 받기보단 nextLine() read 타입을 바꾸자
 ```
----
-	  Today's Point
-	  
-	  [문자를] => 숫자를 (정수, 실수)
-	  Integer.parseInt("11111") ->> 정수 ->> 11111
-	  Float.parseFloat("3.14") ->> 실수 ->> 3.14
-	  
-	  문자열의 비교는 == 를 쓰지 않아요
-	  그래서 일단
-	  String str = "+"; 이런 값이 있다면
-	  if(str == "+") 하지 마시고
-	  if(str.equals("+")) 하시면 됩니다
       
 <br>
 
 
-### 2. case문, for문(*Ex10_Statement)
+### 2. case문, for문(*01_Ex10_Statement)
 ---
 	제어문 
 		* 조건문 : if (3가지) , switch(조건){case 값 ... break} 
@@ -108,10 +108,10 @@ public class Ex10_Statement {
 }
 
 ```
+<br>
 
 
-
-### 3. while문(*Ex11_Statement)
+### 3. while문(*01_Ex11_Statement)
 ---
 	for(;;){}
 	* while(true) {if (조건) break;}
@@ -144,14 +144,11 @@ public class Ex11_Statement {
 		}
 		System.out.println("sum: " + sum);
 		
-		
 		//while 구구단을 출력하세요
 		// for(int i= 2; i <= 9; i++)
 		//	for(int j = 1; j<= 9; j++)
 		int ii = 2;
 		int jj = 1;
-		
-		
 		
 		
 		//while 2개 구구단
@@ -166,12 +163,7 @@ public class Ex11_Statement {
 		}
 		
 		
-		
 		/*
-		 * for(;;){}
-		 * while(true) {if (조건) break;}
-		 * do ~ while : 일단 한번은 강제적으로 수행 하고 ... 그리고 조건을 보고 판단해라
-		 * 
 		 * 메뉴 구성
 		 * 점심 메뉴 선택하세요
 		 * 1. 짜장
@@ -193,17 +185,100 @@ public class Ex11_Statement {
 	}
 }
 ```
+<br>
 
 
-
-### 4. Git 기본 개념
+### 4. Class 개념(*02_Ex01_Main)
 ---
+	 클래스 == 설계도== 타입
+	 클래스 구성요소(설계도라고 판단할려면 최소한 무엇을 가지고 있어야한다)
+	 필드 + 함수 + 생성자 함수
+	 
+	 필드(member field) >> 데이터, 정보 담아야한다>>고유정보, 상태정보, 부품정보 >> field>>variable
+	 함수(method) >> 기능 (행위)>>자동차>> 달린다, 멈춘다, 소리가 난다.
+	 +추가적으로 생성자>> 특수한 목적의 함수>> 객체가 만들어질 때 member field초기화 목적으로
+	 
+	 클래스, 필드, 생성자, 함수 :영역(범위) >> 접근자, 한정자, 수정자
+	 >>public, private, default, protected
+	 
+	 >>kr.or.kosa.common 안에 Car 클래스 >> public class Car{}>>나 다 오픈할꺼야
+	 >>kr.or.kosa.common 안에 Airplane >> class Airplane{>>default class Airplane}
+	 >>default 같은 폴더에서는 공유 : [같은 pakage안에서는 오픈][다른 package에선ㄴ 접근 불가]
+	 >>default 접근자는 : 같은 폴더(package)내에서 만들어서 연습용
+	 
+	 하나의 물리적인 java 파일은 여러개의 클래스를 가질 수 있다. 
+	 >>Ex01_Main.java  파일은 그 안에 Ex01_Main이라는 클래스를 하나 가지고 있다. 
+	 >>일반적으로 필요한 클래스를 별도의 파일로 생성해서 사용...APt.java
+	 >>그냥 연습... 해볼 굳이 물리적인 파일 만들필요 있을까
+	 하나의 물리적 파일은  여러개의 클래스를 가질 수 있지만 public은 하나의 클래스에서 하나만 가질 수 있다.
+
+```java
+
+class Test{//컴파일러가 defaul class Test로 해석
+	int data;//지역변수(instance variable)//컴파일러가 deault int data로 해석한다.
+	public int p_data;//에러는 아니지만 다른 폴더에서 사용불가... public 의미없다. 
+	private int pri_data;//private 감추다. 숨기다, 캡슐화(은닉화)
+	
+}
+public class Ex01_Main {
+	public static void main(String[] args) {
+		Car car = new Car();
+		AirPlane air = new AirPlane();//import 없을 떄 단축기 (ctrl + shilft +o)
+		Apt apt = new Apt();
+	}
+}
+```
+<br>
 
 
-
-### 5. Git 기본 개념
+### 5. private 캡슐화 getter / setter (*03_Emp)
 ---
+```java
+package kr.or.kosa;
 
+public class Emp {
+	
+	
+	//member field (instance variable)
+	private int empno;
+	private String ename;
+	private String job;
+	private int sal;
+	
+	//setter, getter method (read, write) 기능
+	public int getEmpno() {
+		return empno;
+	}
+	public void setEmpno(int empno) {
+		this.empno = empno;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public String getJob() {
+		return job;
+	}
+	public void setJob(String job) {
+		this.job = job;
+	}
+	public int getSal() {
+		return sal;
+	}
+	public void setSal(int sal) {
+		this.sal = sal;
+	}
+	
+	public void empDataPrint() {
+		System.out.println("사원데이터 출력");
+		//method (main함수)
+		//함수안에 있는 변수는 지역 변수 접근자를 붙이지 않아요 (처음 하시는 분)
+		int data=0; //local variable
+		int input=0;
+		//for
+	}
+}
 
-### 6. Git 기본 개념
----
+```

@@ -36,7 +36,7 @@ public class Main {
                 } 
 
             System.out.printf("유저: %s | %s :컴퓨터\n",user_Select_String,computer_String);
-
+ 
 
             if(result == -2 || result == 1) {
                 System.out.println("유저 승리!");

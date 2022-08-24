@@ -5,7 +5,7 @@ public class Main2 {
         int user_Select = 0;
         int computer = 0;
         Scanner sc = new Scanner (System.in);
-
+ 
 
         System.out.println("본격! 컴퓨터를 이겨라!");
         System.out.println("1.가위 | 2.바위 | 3.보");

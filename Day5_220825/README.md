@@ -120,7 +120,7 @@ public class Ex01_Ref_Type {
 	private 함수 만들어서 사용
 
 
-## Class 함수!
+#### Class 함수!
 ```java
 public class Fclass {
 	public int data;
@@ -181,7 +181,7 @@ public class Fclass {
 		}
 	}
 
-    
+
     /*
 	 a 와 b 둘중에 큰값을 return 하는 함수를 만드세요
 	 */
@@ -193,7 +193,7 @@ public class Fclass {
 }
 ```
 
-## 메인함수!
+#### 메인함수!
 ```java
 import kr.or.kosa.Fclass;
 

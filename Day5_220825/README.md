@@ -2,7 +2,7 @@
 <br>
 
 
-### 1. class설계도 개념과 작성방법 (*03_Ex01_Ref_Type)
+### 1. class설계도 개념과 작성방법 (*03_Person.java)
 ---
     member field >> instance variable >> 객체변수
 	 1. instance variable 초기화를 하지 않아도 된다 >> why >> default 값
@@ -55,7 +55,7 @@ public class Ex01_Ref_Type {
 
 ```
 
-### 2. 자바 기본 Parameter (*03_Ex01_Ref_Type)
+### 2. 자바 void,return 타입, Parameter (*03_Fclass.java 16L)
 ---
     JAVA) 
     1. void, parameter(0): void print(String str){실행코드}
@@ -73,3 +73,38 @@ public class Ex01_Ref_Type {
     //나는 당신에게 Car 객체의 주소를 return 하는것
     
     String print(){return "A";}
+
+    parameter type >> void print(String 파라메터) >> 기본 8가지 + String + Array, class, collection, interface 
+ 
+    void print(int i){}
+    void print(String Str){}
+    void print(Car car){}
+    
+    print(c); // print 함수 호출시 c라는 변수값(주소값)
+    
+    어려워요 ... 동전 구멍이 여러개 ...
+    ------------------------------------------
+    void print (int a, int b, int c, int d){}
+    
+    print(10, 20) //실행 x
+    print(100,100,100) //실행 x
+    print(100,100,100,200) //실행 o
+    ------------------------------------------
+    void print(Car c, String str, int i){}
+    각 파라미터 외의 값이 들어가면 실행 x
+
+
+### 3. 관용적인 표현(*03_Fclass.java 54L)
+---
+    코드 규칙 : 관용적
+    class 이름의 첫글자는 대문자 : class Car, class Person
+    method의 이름은 단어의 첫글자 소문자 이어지는 단어의 첫글자는 대문자 ..: getNumber()
+    
+    사원번호를 가지고 사원의 모든정보를 가지고 와라 (함수 생성)
+    ex) getEmpListByEmpno()  // get Emp List By Empno 가지고온다 사원의 리스트를 사원번호를 가지고
+    
+    함수의 이름으로 대략적이 내용 파악 가능하도록!
+
+### 4. Call 함수(*Ex02_Method_Call 5L)
+---
+    

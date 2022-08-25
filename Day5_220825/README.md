@@ -181,6 +181,15 @@ public class Fclass {
 		}
 	}
 
+    
+    /*
+	 a 와 b 둘중에 큰값을 return 하는 함수를 만드세요
+	 */
+	
+	public int max(int a, int b) {
+		return (a>b) ? a : b;
+	}
+
 }
 ```
 

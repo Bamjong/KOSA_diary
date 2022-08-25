@@ -68,5 +68,8 @@ public class Ex01_Ref_Type {
     이 중에서 기본 8가지 + String + class 인정 ....
     
     boolean print (return true)
-    Car print(){ Car c = new Car(); return c; } //나는 당신에게 Car 객체의 주소를 return 하는것
-    String print(){ return "A";}
+    
+    Car print(){Car c = new Car(); return c;}
+    //나는 당신에게 Car 객체의 주소를 return 하는것
+    
+    String print(){return "A";}

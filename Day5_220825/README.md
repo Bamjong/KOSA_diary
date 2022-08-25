@@ -223,6 +223,111 @@ public class Ex02_Method_Call {
 		System.out.println("max 함수 호출시 돌려받은 값: " + result2);
 	} 
 }
+```
 
+### 4. 설계도 작성(*03_Ex03_Method_call.java, 03_Tv.java)
+---   
+    Tv 설계도 요구사항정의
+    
+    Tv는 채널 정보를 가지고 있다 (예를들면 1~200 값을 가질 수 있다)   //public
+    Tv는 브랜드 이름을 가지고 있다 (예를들면 엘지, 삼성 --- 등등등)    //public
+    Tv는 채널 전환기능을 가지고 있다 (채널은 한 채널씩 이동이 가능하다
+    ->채널을 증가 감소 시키는 기능을 가지고 있다.
+    
+    Tv의 채널정보와 브랜드이름을 볼 수있는 기능을 가지고 있다
+ 
+```java
+import kr.or.kosa.Tv;
+public class Ex03_Method_Call {
+	public static void main(String[] args) {
+		Tv lgtv = new Tv();
+		lgtv.brandname = "LG";
+		
+		lgtv.tvInfo();
+			lgtv.ch_Up();	
+			lgtv.ch_Up();
+			lgtv.ch_Up();
+		lgtv.tvInfo();
+			lgtv.ch_Down();
+			lgtv.ch_Down();
+		lgtv.tvInfo();
+			
+		Tv sstv = new Tv();
+		sstv.brandname = "SAMSUNG";
+		sstv.tvInfo();
+			sstv.ch_Up();
+	}
+}
+
+```
+
+```java
+package kr.or.kosa;
+import java.util.Scanner;
+public class Tv {
+	
+	public int ch = 1;
+	public String brandname;
+	
+	public void ch_Up() {
+		ch++;
+	}
+	public void ch_Down(){
+		ch--;
+	}
+	public void tvInfo() {
+		System.out.printf("[%s] , [%d] \n",brandname,ch);
+	}
+}
+```
+
+### 5. 캡슐화(*03_Ex04_Modifier.java, NoteBook.java)
+---
+    객체지향언어 (캡슐화, 은닉화 : 직접적으로 값을 변경하고 쓰는 것 방지)
+	 ex) year 마이너스 값을 넣지마!! ...
+	 	 but 졸고있던 개발자 말을 안듣고 넣으면 프로그램 터짐
+	 	 
+	 그러므로 
+	 	설계자 >> 다 막아버릴거야 >> 사용불가 >> 간접적으로 사용가능 >> 누군가 통해서 read,write(getter / setter)
+
+#### 캡슐화란?
+    직접할당을 막고 간접할당을 통해 제어하는것
+
+#### getter / setter
+    약속 캡슐화 (read, write 함수) >> 표준화 >> getYear... , setYear >> getter // setter
+
+```java
+import kr.or.kosa.*;
+
+public class Ex04_Modifier {
+
+	public static void main(String[] args) {
+
+		NoteBook notebook = new NoteBook();
+		notebook.writeYear(2022);  // 마이너스값은 못넣어요!  마이너스면 1999 할당
+		int year = notebook.readYear();
+		System.out.println("year: " + year);
+	}
+}
+```
+
+```java
+package kr.or.kosa;
+
+public class NoteBook {
+	public String color;
+	private int year;
+	
+	public void writeYear(int data) { // 음수가 들어오면 새로 세팅해서 줌 (간접할당의 장점)
+		if(data < 0) {
+			year = 1999;
+		} else {
+			year = data;
+		}
+	}
+	public int readYear() { //간접적으로 year라고 하는 member field 값을 return 하는 함수
+		return year;
+	}
+}
 
 ```

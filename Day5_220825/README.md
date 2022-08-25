@@ -54,3 +54,19 @@ public class Ex01_Ref_Type {
 }
 
 ```
+
+### 2. 자바 기본 Parameter (*03_Ex01_Ref_Type)
+---
+    JAVA) 
+    1. void, parameter(0): void print(String str){실행코드}
+    2. void, parameter(x): void print(){실행코드} >> 공짜
+    3. return type , parameter(0) : int print(int data){return 100;} 
+    4. return type , parameter(x) : int print(){return 100;}
+
+    *** void > 돌려주는 것이 없어요 > return type 없어요
+    return type >> 기본 8가지 + String + Array, class, collection, interface
+    이 중에서 기본 8가지 + String + class 인정 ....
+    
+    boolean print (return true)
+    Car print(){ Car c = new Car(); return c; } //나는 당신에게 Car 객체의 주소를 return 하는것
+    String print(){ return "A";}

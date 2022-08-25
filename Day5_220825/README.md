@@ -418,4 +418,4 @@ public class Mouse {
 
 ![자바메모리](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc0vhJq%2FbtrvvCXk7Ha%2FIkn2rkKKyey9OV0WlQcg90%2Fimg.png)
 
-![이미지](https://ibb.co/9ym5dB4)
+![이미지](https://i.postimg.cc/mZ031GYZ/20220825-154800.jpg)

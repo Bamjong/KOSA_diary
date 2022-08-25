@@ -105,6 +105,115 @@ public class Ex01_Ref_Type {
     
     함수의 이름으로 대략적이 내용 파악 가능하도록!
 
-### 4. Call 함수(*Ex02_Method_Call 5L)
+### 4. Call 함수(*03_Fclass.java,03_Ex02_Method_Call)
 ---
+    void m() >> 컴파일러가 >> default void m() >> 같은 폴더 내에서
+	함수 70% public
+	함수 30% private  why? : hint) public, private 클래스 내부 동등 ...
+	클래스 내부에서 만 사용해라 >> 이런 함수 >> 공통함수 >> 다른 함수를 도와주는 함수
+
     
+	함수의 접근자
+	default int subSum(){} 같은 폴더 ...
+	private int subSum(){} 같은 폴더도 안돼요
+	클래스 내부에서 다른 함수를 도와주는 공통함수 ...
+	private 함수 만들어서 사용
+
+
+## Class 함수!
+```java
+public class Fclass {
+	public int data;
+	
+	public void m() { //void, parameter(x)
+		//기능 구현
+		//main 함수에서 사용했던 코드를 그대로 구현
+		System.out.println("일반함수 : void, parameter(x)");
+	}
+	
+	//void m2(int)
+	public void m2(int i) {
+		System.out.println("일반함수 : void, parameter(0)");
+		System.out.println("parameter 값은 활용	i변수 함수 내부 : " + i);
+	}
+	
+	//
+	public int m3() {
+		//무조건, 강제로 ,,,
+		return 1000; //return type이 존재하면 반드시 return 키워드 명시 필수
+	}
+	
+	public int m4(int data) {
+		return 100 + data;
+	}
+	//요거까진 기본 4가지
+	
+	//확장..
+	//return type(0), parameter(0) 단지 개수 ....
+	public int sum(int i, int j, int k) {
+		return i + j + k;
+	}
+	
+	////////////////////////////////////////////////
+	
+	private int subSum(int i) { //다른 함수가 호출해서 사용...
+		return i + 100;			//로직이 모든 함수가 가지고 있다면... 변경이 쉬움 >> 유지보수!
+	}
+	
+	public void callSubSum() {
+		//함수는 다른 함수를 호출할 수 있다.\
+		int result = subSum(100);
+		System.out.println("call result : " + result);
+    }
+
+    //private 이용하기
+	private int operationMethod (int data) {
+		return data * 200;
+	}
+	
+	public int opSum(int data) {
+		int result = operationMethod(data);
+		//제어문
+		if (result > 0) {
+			return 1;
+		} else {
+			return -1;
+		}
+	}
+
+}
+```
+
+## 메인함수!
+```java
+import kr.or.kosa.Fclass;
+
+public class Ex02_Method_Call {
+	public static void main(String[] args) {
+		//Fclass 생성 ... 메모리에 올려야 한다 ... 객체 생성
+		Fclass fclass = new Fclass();
+		fclass.m(); // 호출했다 그의 이름을 불러 주었어요 call
+		fclass.m2(100);
+		int result = fclass.m3();
+		System.out.println("m3 함수 호출시 돌려받은 값: " + result);
+		
+		int result2 = fclass.m4(555);
+		System.out.println("m4 함수 호출시 돌려받은 값: " + result2);
+		
+		result2 = fclass.sum(100, 200, 300);
+		System.out.println("sum 함수 호출시 돌려받은 값: " + result2);
+		
+		fclass.callSubSum();
+		
+		
+		
+		result2 = fclass.opSum(1111);
+		System.out.println("opSum 함수 호출시 돌려받은 값: " + result2);
+		
+		result2 = fclass.max(100, 50);
+		System.out.println("max 함수 호출시 돌려받은 값: " + result2);
+	} 
+}
+
+
+```

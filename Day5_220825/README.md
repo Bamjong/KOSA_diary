@@ -193,7 +193,7 @@ public class Fclass {
 }
 ```
 
-#### 메인함수!
+#### main 함수!
 ```java
 import kr.or.kosa.Fclass;
 

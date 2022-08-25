@@ -12,9 +12,10 @@
     
 ---
      Today's point : why 초기화 ...
-            *********	생성되는 객체(사람) 마다, [다른 이름을 가질수 있다]	*********
-            
-            Person member field	당신이 사람을 만들때 마다 다른 값을 가지게 할 것인데 굳이 초기화 시켜야 할것이냐
+
+        *********	생성되는 객체(사람) 마다, [다른 이름을 가질수 있다]	*********
+        
+        Person member field	당신이 사람을 만들때 마다 다른 값을 가지게 할 것인데 굳이 초기화 시켜야 할것이냐
 
 
 
@@ -105,7 +106,7 @@ public class Ex01_Ref_Type {
     
     함수의 이름으로 대략적이 내용 파악 가능하도록!
 
-### 4. Call 함수(*03_Fclass.java,03_Ex02_Method_Call)
+### 4. Call 함수(*03_Ex02_Method_Call, 03_Fclass.java)
 ---
     void m() >> 컴파일러가 >> default void m() >> 같은 폴더 내에서
 	함수 70% public
@@ -119,6 +120,37 @@ public class Ex01_Ref_Type {
 	클래스 내부에서 다른 함수를 도와주는 공통함수 ...
 	private 함수 만들어서 사용
 
+#### main 함수!
+```java
+import kr.or.kosa.Fclass;
+
+public class Ex02_Method_Call {
+	public static void main(String[] args) {
+		//Fclass 생성 ... 메모리에 올려야 한다 ... 객체 생성
+		Fclass fclass = new Fclass();
+		fclass.m(); // 호출했다 그의 이름을 불러 주었어요 call
+		fclass.m2(100);
+		int result = fclass.m3();
+		System.out.println("m3 함수 호출시 돌려받은 값: " + result);
+		
+		int result2 = fclass.m4(555);
+		System.out.println("m4 함수 호출시 돌려받은 값: " + result2);
+		
+		result2 = fclass.sum(100, 200, 300);
+		System.out.println("sum 함수 호출시 돌려받은 값: " + result2);
+		
+		fclass.callSubSum();
+		
+		
+		
+		result2 = fclass.opSum(1111);
+		System.out.println("opSum 함수 호출시 돌려받은 값: " + result2);
+		
+		result2 = fclass.max(100, 50);
+		System.out.println("max 함수 호출시 돌려받은 값: " + result2);
+	} 
+}
+```
 
 #### Class 함수!
 ```java
@@ -193,38 +225,6 @@ public class Fclass {
 }
 ```
 
-#### main 함수!
-```java
-import kr.or.kosa.Fclass;
-
-public class Ex02_Method_Call {
-	public static void main(String[] args) {
-		//Fclass 생성 ... 메모리에 올려야 한다 ... 객체 생성
-		Fclass fclass = new Fclass();
-		fclass.m(); // 호출했다 그의 이름을 불러 주었어요 call
-		fclass.m2(100);
-		int result = fclass.m3();
-		System.out.println("m3 함수 호출시 돌려받은 값: " + result);
-		
-		int result2 = fclass.m4(555);
-		System.out.println("m4 함수 호출시 돌려받은 값: " + result2);
-		
-		result2 = fclass.sum(100, 200, 300);
-		System.out.println("sum 함수 호출시 돌려받은 값: " + result2);
-		
-		fclass.callSubSum();
-		
-		
-		
-		result2 = fclass.opSum(1111);
-		System.out.println("opSum 함수 호출시 돌려받은 값: " + result2);
-		
-		result2 = fclass.max(100, 50);
-		System.out.println("max 함수 호출시 돌려받은 값: " + result2);
-	} 
-}
-```
-
 ### 4. 설계도 작성(*03_Ex03_Method_call.java, 03_Tv.java)
 ---   
     Tv 설계도 요구사항정의
@@ -235,7 +235,8 @@ public class Ex02_Method_Call {
     ->채널을 증가 감소 시키는 기능을 가지고 있다.
     
     Tv의 채널정보와 브랜드이름을 볼 수있는 기능을 가지고 있다
- 
+
+#### Main 함수!
 ```java
 import kr.or.kosa.Tv;
 public class Ex03_Method_Call {
@@ -261,6 +262,7 @@ public class Ex03_Method_Call {
 
 ```
 
+#### Class 함수!
 ```java
 package kr.or.kosa;
 import java.util.Scanner;
@@ -296,6 +298,8 @@ public class Tv {
 #### getter / setter
     약속 캡슐화 (read, write 함수) >> 표준화 >> getYear... , setYear >> getter // setter
 
+    
+#### Main 함수!
 ```java
 import kr.or.kosa.*;
 
@@ -310,7 +314,7 @@ public class Ex04_Modifier {
 	}
 }
 ```
-
+#### Class 함수!
 ```java
 package kr.or.kosa;
 

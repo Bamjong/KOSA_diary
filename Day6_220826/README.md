@@ -6,15 +6,16 @@
 ---
 
 #### 실무코드의 특징
+--- 
  1. 캡슐화 (member field)
  2.	캡슐화 (간접적으로 처리 : setter/getter)
  3. 이런 데이터를 담을 수 있는 클래스 (VO, DTO, DOMAIN)
 
- 필요에 따라서 (setter 만)			>> write
- 필요에 따라서 (getter 만)			>> read
- 필요에 따라서 (setter, getter 만)	>> write, read
+    필요에 따라서 (setter 만)			>> write
+    필요에 따라서 (getter 만)			>> read
+    필요에 따라서 (setter, getter 만)	>> write, read
 	
- 일단은 굳이 따로 하지말고 그냥 둘다 쓰세요!
+    일단은 굳이 따로 하지말고 그냥 둘다 쓰세요!
 
 
 #### Lombok(롬복)

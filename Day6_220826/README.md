@@ -6,7 +6,7 @@
 ---
 
 #### 실무코드의 특징
-=== 
+
  1. 캡슐화 (member field)
  2.	캡슐화 (간접적으로 처리 : setter/getter)
  3. 이런 데이터를 담을 수 있는 클래스 (VO, DTO, DOMAIN)
@@ -21,6 +21,10 @@
 #### Lombok(롬복)
 ---
  Lombok 이란 Java 라이브러리로 반복되는 getter, setter, toString .. 등의 반복 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리 이다.
+ @Getter
+ @Setter
+ 컴파일러에게 자동으로 setter , getter 만들어 주세요...
+ 
  [출처](https://cheershennah.tistory.com/183)
 
 ```java
@@ -45,5 +49,5 @@ public class BoardCategoryLombok {
     private int seq;
 
 }
-출처: https://cheershennah.tistory.com/183 [Today I Learned. @cheers_hena 치얼스헤나:티스토리]
+
 ```

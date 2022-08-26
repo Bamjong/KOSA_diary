@@ -205,7 +205,7 @@ public class Ex09_Static_init {
 
 }
 ```
-출력값
+##### 출력값
 ---
     초기자 블럭
     2222

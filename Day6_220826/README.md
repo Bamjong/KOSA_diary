@@ -20,11 +20,12 @@
 
 #### Lombok(롬복)
 ---
- Lombok 이란 Java 라이브러리로 반복되는 getter, setter, toString .. 등의 반복 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리 이다.
+ Lombok 이란 Java 라이브러리로 반복되는 getter, setter toString .. 등의
+ 반복 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리 이다.
  @Getter
  @Setter
  컴파일러에게 자동으로 setter , getter 만들어 주세요...
- 
+
  [출처](https://cheershennah.tistory.com/183)
 
 ```java

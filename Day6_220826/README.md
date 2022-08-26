@@ -80,7 +80,7 @@ public class BoardCategoryLombok {
 
 
 
-### 3. Static
+### 3. Static 
 ---
 
 #### int
@@ -162,3 +162,50 @@ public class Ex06_Variable_Scope {
     위에 있는 코드를 메모리를 그려 작성해보기
 
 ![메모리이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGOzbk%2FbtrvoQ9iNTS%2FZyNZyKk0KtupwDq8V2GJ31%2Fimg.png)
+
+
+### 4. 초기자블럭 (*03_Ex09_Static_init)
+---
+#### static
+    static 변수는 객체마다 다른 값을 가지게 할거야를 목적으로 설계
+
+#### instance
+    instance 변수는 객체마다 다른 값을 가지게 할거야를 목적으로 설계
+--- 
+    초기자 블럭(member field 초기화)
+    객체가 생성되고 나서 int iv 메모리에 올라가고 나서 바로 호출됨 { 블럭 } 
+    인위적인 코드 생산가능 if(iv > 10) iv = 100;
+    초기자 블럭은 new 해야지 시작됨
+
+```java
+class InitTest{
+    static int cv = 10;
+	static int cv2;
+	int iv = 11;
+	//위에 세놈은 default값을 가져 초기화 안해도됨
+	
+	{
+		//초기자 블럭(member field 초기화)
+		//객체가 생성되고 나서 int iv 메모리에 올라가고 나서 바로 호출됨 { 블럭 } 
+		//인위적인 코드 생산가능 if(iv > 10) iv = 100;
+        //초기자 블럭은 new 해야지 시작됨
+		System.out.println("초기자 블럭");
+		//iv = 2222;
+		if(iv > 10) iv = 1000;
+	}
+}
+public class Ex09_Static_init {
+
+	public static void main(String[] args) {
+		InitTest t = new InitTest();
+		System.out.println(t.iv);
+		
+
+	}
+
+}
+```
+출력값
+---
+    초기자 블럭
+    2222

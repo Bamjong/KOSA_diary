@@ -100,7 +100,6 @@ public class BoardCategoryLombok {
 		- iv 변수의 생성 시점: new 라는 연산자를 통해 heap variable 이름의 객체가 만들어지고 나서 바로생성
 
 #### static
-    /*
 	1.class variable (클래스 변수), 일반적으로는 static variable (객체간 공유자원)
 	
 	2. 목적 : 정보를 담는 것 (생성되는 모든 객체가 공유하는 자원)
@@ -159,3 +158,7 @@ public class Ex06_Variable_Scope {
 }
 
 ```
+---
+    위에 있는 코드를 메모리를 그려 작성해보기
+
+![메모리이미지](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGOzbk%2FbtrvoQ9iNTS%2FZyNZyKk0KtupwDq8V2GJ31%2Fimg.png)

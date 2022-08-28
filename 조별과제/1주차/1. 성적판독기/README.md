@@ -25,6 +25,7 @@ public class Main{
 }
 ```
 출력
+---
     60
     양
     97

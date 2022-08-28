@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int alpha = Integer.parseInt(sc.nextLine());
+        String alpha = sc.nextLine();
         
-
-        System.out.println(alpha);
+        for (int i = 97; i <= 100; i++) {
+            String a = Integer.toString(i);
+            System.out.println(i);
+        }
 
         
     }

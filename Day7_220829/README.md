@@ -27,7 +27,7 @@
 
 <br>
 
-## 2. Overloading / Overriding (*03_Ex13~14_Method_Overloading)
+## 2. Overloading  (*03_Ex13~14_Method_Overloading)
 ---
 
 #### OOP 객체 지향 프로그래밍
@@ -67,3 +67,89 @@
     4. why : 생성되는 객체마다[강제적으로] member field 값을 초기화 할 수 있다.
     5. 생성자 함수(.... overloading기법 적용 가능)
     6. 생성자 오버로딩을 통해서 다양한 **강제사항**을 구현... (제일중요)
+
+
+## 4. Exception(예외처리) (*07_Ex01~02_Exception)
+---
+
+오류
+    1. 에러 (error) : 네트위크 장애, 메모리, 하드웨어 >> 개발자가 코드적으로 해결 불가
+    2. 예외 (exception) : 개발자가 코드의 실수에의해 발생 >> 문제 코드 찾아서 수정 >> 배포
+                    >> 프로그램 컴파일시가 아니라 실행시 알 수 없음(테스트..)
+                    >> 문제가 발생하면 (exception) 프로그램 강제 종료
+
+    3. 예외처리 >> 예외발생에 대한 코드 수정하는 것이 아니고 일반 임시방편으로 문제가 생기더라도 프로그램이 안정적으로 종료되는 것을 처리
+                >> 결국 얘외처리를 통해서 문제가 생긴 부분을 찾고 다시 코드 수정 >> 배포
+
+    try{
+    >> 문제가 의심되는 코드 실행
+    >> 문제가 발생(exception)
+    } catch(Exception e) {
+        >> 문제가 발생한 예외 부분을 파악 ..
+        >> 처리 (코드를 수정하는 것이 아님, 보고하는 것)
+        1) 관리자에게 이메일
+        2) 로그 파일에 기록
+        3) 강제 프로그램 종료 막음(일단은)
+            >> 결국 개발자가 수정하는 것이 답 .. 
+    } finally {
+    >> 문제가 발생하던, 발행하지 않던 강제적으로 실행해야 할 코드
+    >> DB작업 문제 (특정 자원에 종료) 강제
+
+```java
+public class Ex01_Exception {
+   
+
+   public static void main(String[] args) {
+      
+   
+   /*   
+      System.out.println("main start");
+      System.out.println(0/0); //java.lang.ArithmeticException: / by zero
+      //프로그램 강제 종료
+      System.out.println("main end");
+      
+   }
+    */
+   
+   System.out.println("main start");
+   
+   try {
+      System.out.println(0/0);
+      //연산 예외가 발생 ... try{} catch() 처리 프로그램이 강제 종료되진 않음
+      //Exception 클래스 사용 (예외 클래스의 최상위 부모 )
+      //e라는 변수는 무엇을 받는걸까?
+      //Exception e >> Exception 객체의 주소값 ...
+      
+      //ArithmeticException 문제가 발생
+      //컴파일러에 의해서 연산 예외 객체(ArithmeticException)가 생성 되고 
+      //그 객체에게 문제가 되는 메세지, 코드 전달
+      
+   } catch (Exception e) { //부모 type의 변수는 자식 type의 주소값을 받을 수 있다(다형성)
+      //어떤 문제인지를 파악하고 그 정보를 전달
+      // 관리자, email, log 기록
+      System.out.println(e.getMessage());
+   }
+   System.out.println("main end");
+   }
+}
+```
+
+## 5. This (*03_Ex19_this)
+---
+### This(이것)
+    자기 자신 클래스(객체)를 가리킨다.
+---
++ 메소드내에서만 사용된다
+
++ 객체 자신을 메소드에 전달하거나 리턴해 주기위해 사용하기도 한다.
+
++ this를 사용하으로서 모호하지 않고 좀더 명확한 프로그램을 작성할 수 있다.
+
++ 객체 생성자내에서 사용시 다른 생성자를 호출한다. (this의 용법 1)
+
++ 매개변수와 객체 자신이 가지고 있는 변수의 이름이 같은 경우 이를 구분하기 위해 자신의 변수에 this를 사용한다. (this의 용법 2)
+
++ static 메서드(예를 들어 main())에서 쓸 수 없다.
+    [ static 메서드는 객체가 new라는 키워드로 생성되기 이전에 메모리에 로딩이되므로 아직 객체가 생기지 않았는데 this를 사용 불가]
+
+​

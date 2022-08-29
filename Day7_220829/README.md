@@ -39,7 +39,7 @@
 
 #### method overloading(오버로딩)
     1. 하나의 이름으로 여러가지 기능을 하는 함수
-+ System.out.println() << println()함수 이름은 한개 ... 사용방법은 여러개
+        - System.out.println() << println()함수 이름은 한개 ... 사용방법은 여러개
     2. 편하게 사용하려고... 설계자가 개발자를 배려... (개발자)
     3. 오버로딩을 사용하지 않아도 문제 되지 않는다.
 
@@ -52,3 +52,16 @@
 <br>
 
 ## 3. Constructor(생성자) (*03_Ex15_Constructor)
+---
+
+#### 생성자 함수(constructor)
+
+1. 함수(특수한 목적)
+2. 목적(member field 초기화) >> static {} , {초기자 블럭}
+
+3. 일반함수와 다른점
++ 3.1 함수의 이름이 고정(class 이름 동일)
++ 3.2 return type 없어요 (객체 생성과 동시에 호출) (return을 받을 대상이 없다)
++ 3.3 실행시점 >> new 객체 생성 >> heap 공간 생성 >> member field 자리 >> 자동으로 생성자 함수 호출
+
+4. why : 생성되는 객체마다[강제적으로] member field 값을 초기화 할 수 있다.

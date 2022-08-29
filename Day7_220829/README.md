@@ -25,12 +25,13 @@
 
 [함수의 호출방식 출처]https://wayhome25.github.io/cs/2017/04/11/cs-13/
 
+<br>
 
-## 2. Overloading / Overriding 
+## 2. Overloading / Overriding (*03_Ex13~14_Method_Overloading)
 ---
 
 #### OOP 객체 지향 프로그래밍
-     (여러개의 조각들을(설계도) 만들어서 조합하는 행위)
+##### (여러개의 조각들을(설계도) 만들어서 조합하는 행위)
 
     1. 상속 (재사용성)
     2. 캡슐화 (은닉화) : private ... getter/setter (직접할당을 막고 간접할당을 톻해 데이터 보내기)
@@ -38,7 +39,7 @@
 
 #### method overloading(오버로딩)
     1. 하나의 이름으로 여러가지 기능을 하는 함수
-        + System.out.println() << println()함수 이름은 한개 ... 사용방법은 여러개
++ System.out.println() << println()함수 이름은 한개 ... 사용방법은 여러개
     2. 편하게 사용하려고... 설계자가 개발자를 배려... (개발자)
     3. 오버로딩을 사용하지 않아도 문제 되지 않는다.
 
@@ -47,3 +48,7 @@
     2. parameter 개수 또는 타입을 달라야 한다.
     3. return type은 오버로딩의 판단 기준이 아니다.
     4. parameter의 순서가 다름을 인정한다.
+
+<br>
+
+## 3. Constructor(생성자) (*03_Ex15_Constructor)

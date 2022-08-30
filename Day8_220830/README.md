@@ -3,7 +3,6 @@
 
 
 ## 1. 배열(Array) (*04_Ex01_Array_Basic, Ex02~03 ···)
----
 
 ### 배열은 객체다
     1. new를 통해서 생성
@@ -86,7 +85,6 @@ System.out.printf("총 과목수: [%d] 총점: [%d] 평균[%d]",jumsu.length,sum
 
 
 ## 2. 개선된 for문 (*04_Ex04_Array_For)
----
 
     for문 >> 향상된 for문, 개선된 for문
     JAVA	: for(Type 변수명 : 배열 or Collection) (실행블럭)

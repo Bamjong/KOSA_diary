@@ -112,3 +112,28 @@ System.out.printf("총 과목수: [%d] 총점: [%d] 평균[%d]",jumsu.length,sum
     7
     8
     9
+
+## 3. 객체 배열  (*05_Ex05_Array_Object)
+![이미지](https://smoothiecoding.kr/wp-content/uploads/2021/03/javaarray-1.jpg)
+
+#### 객체 배열 3가지 방법으로 만들기
+		
+1. int[] arr = new int[10];
+```java
+Person[] parray1 = new Person[10]; // 방만 생성
+for (int i = 0; i < parray1.length; i++) {
+    parray1[i] = new Person();
+    System.out.println("주소값: " + parray1[i]);
+}
+```
+		
+2. int[] arr = new int[]{10,20,30}
+```java
+Person[] parray2 = new Person[] {new Person(), new Person(), new Person()};  
+```
+
+
+3. int[] arr = {10,20,30}
+```java
+Person[] parray3 = {new Person(), new Person(), new Person()};
+```

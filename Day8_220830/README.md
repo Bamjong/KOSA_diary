@@ -168,7 +168,7 @@ public class Ex08_Array_Rank {
 		for (int i = 0; i < score.length; i++) {
 			for (int j = 0; j < score[i].length; j++) {
 				System.out.printf("score[%d][%d]=%d\t",i,j,score[i][j]);
-			}
+            }
 			System.out.println();
 		}
 		

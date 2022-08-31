@@ -53,3 +53,23 @@
     예매 , 조회 , 취소 가능하면 됩니다 ^^
 
 ![이미지](https://cafeptthumb-phinf.pstatic.net/MjAyMDAzMTRfMjI5/MDAxNTg0MTgxNzYxOTgz.Mn8XB87cbubNobUCtSyQ-Y_jQMKPZKIt5hsTeYTdkNYg.WCJwPhKAT0ayFM1jznJWCb4qVc-ngZ0VHSZB8gb3K4Qg.PNG/cinema2_3%EC%A1%B0.png?type=w800)
+
+
+이번에 하면서 문제가 하나 있었는데 그것은 바로 
+```java
+Scanner sc = new Scanner(System.in);
+Integer.parseInt(sc.nextLine());
+```
+를 작성하면 엔터 값까지 출력이 되는 것이었다...
+
+이거를 찾지 못해 끙끙 앓다 제출하였다.
+
+하나씩 해석하며 뭐가 잘못되었는지 알아보다
+아~~ 하고 알게 된 오류이다.
+
+앞으로는 이런 실수를 발견하면 바로 고칠 수 있는 계기가 될 것이라 믿는다.
+
+![이미지](https://jandi-box.com/files-thumb/28106203/16619389316600921c760cc80d7c28242ecd48070514f?size=640)
+
+    nextInt() 메소드 다음에 nextLine() 메소드를 실행하려고 할때 nextLine()메소드가 그냥 넘어가버리는 오류가 생겨난다.  이 이유는 nextInt()메소드를 실행 할 때 20을 콘솔에 입력하고 엔터를 누를때 20을 리턴시켰지만 Enter값은 그대로 남아있다. nextLine() 메소드는 Enter값을 기준으로 메소드를 종료시키기 때문에 nextLine()메소드가 실행될 때 남아있는 Enter값을 그대로 읽어 바로 종료된 것이다. 그래서 첫번째 문자열입력: 이 넘어가고 두번째 정수입력: 이 출력된 것이다.만약 정수를  입력하고 그다음 문자를 입력하려고 할 때 next() 메소드를 사용하여야 한다.  아니면 위에 nextLine()메소드를 한번더 써줘서 enter값을 없애줘야한다.
+출처: https://deftkang.tistory.com/55 [deftkang의 IT 블로그:티스토리]

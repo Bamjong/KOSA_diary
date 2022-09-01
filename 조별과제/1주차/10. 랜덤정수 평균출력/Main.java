@@ -1,32 +1,38 @@
-// class Number {
-//     private int num;
-    
 
+class Number{
+    int[] ranArray = new int[10];
+    double result;
 
-//     public Number(int num){
-//         this.num = num;
-//     }
+    Number(){ //생성자를 이용해 시작하자마자 배열에 랜덤값 삽입
+        random();
+    }
 
-//     public int random(){
-//         num = (int)(Math.random() * 10 + 1);
-//         return num;
-//     }
-// }
+    int[] random(){ //랜덤값을 ranArray에 삽입
+        
+        for (int i = 0; i < ranArray.length; i++) {
+            int ran = (int)(Math.random() * 11 + 1); // 1 ~ 10 난수 설정
+            ranArray[i] = ran;
+        }
+        return ranArray;
+    }
 
-// //(int)(Math.random() * 10 + 1);
+    double Avg(){ //평균 설정
+        for (int i = 0; i < ranArray.length; i++) {
+            result += ranArray[i];
+        }
+        result /= ranArray.length;
+        return result;
+    }
+}
 
-// public class Main {
-//     public static void main(String[] args) {
-//         Number num [] = new Number[10];
-
-
-//         for (int i = 0; i < num.length; i++) {
-//             //num[i] = (int)(Math.random() * 10 + 1);
-//             num[i] = 1;
-//         }
-
-//         for (int i = 0; i < num.length; i++) {
-//             System.out.println(num[i]);
-//         }
-//     }
-// }
+public class Main{
+    public static void main(String[] args) {
+        Number number = new Number();
+            System.out.print("랜덤한 정수들 : ");
+            
+            for(int ran : number.ranArray){  //랜덤 정수 확인
+                System.out.print(ran + " ");
+            }
+        System.out.printf("\n평균은 %.1f", number.Avg());
+    }
+}

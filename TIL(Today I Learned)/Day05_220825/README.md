@@ -225,7 +225,7 @@ public class Fclass {
 }
 ```
 
-### 4. 설계도 작성(*03_Ex03_Method_call.java, 03_Tv.java)
+### 5. 설계도 작성(*03_Ex03_Method_call.java, 03_Tv.java)
 ---   
     Tv 설계도 요구사항정의
     
@@ -283,7 +283,7 @@ public class Tv {
 }
 ```
 
-### 5. 캡슐화(*03_Ex04_Modifier.java, NoteBook.java)
+### 6. 캡슐화(*03_Ex04_Modifier.java, NoteBook.java)
 ---
     객체지향언어 (캡슐화, 은닉화 : 직접적으로 값을 변경하고 쓰는 것 방지)
 	 ex) year 마이너스 값을 넣지마!! ...
@@ -336,7 +336,7 @@ public class NoteBook {
 
 ```
 
-### 6. 클래스(*03_Ex04_Modifier.java, NoteBook.java, Mouse.java)
+### 7. 클래스(*03_Ex04_Modifier.java, NoteBook.java, Mouse.java)
 ---
 
 #### Main 함수!
@@ -401,7 +401,7 @@ public class Mouse {
 
 ```
 
-### 7. JAVA 메모리 구조
+### 8. JAVA 메모리 구조
 ---
 
 메소드(Method) 영역

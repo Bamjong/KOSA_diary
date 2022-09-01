@@ -82,7 +82,11 @@
 
 ## 조별과제
 
-### 1주차
+
+<details>
+<summary>1주차</summary>
+<div markdown="1">
+
 1. [성적판독기](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/01.%20%EC%84%B1%EC%A0%81%ED%8C%90%EB%8F%85%EA%B8%B0)
 2. [숫자 맞추기 게임](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/02.%20%EC%88%AB%EC%9E%90%20%EB%A7%9E%EC%B6%94%EA%B8%B0%20%EA%B2%8C%EC%9E%84)
 3. [양의 정수값 자릿수 출력](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/03.%20%EC%96%91%EC%9D%98%20%EC%A0%95%EC%88%98%EA%B0%92%20%EC%9E%90%EB%A6%BF%EC%88%98%20%EC%B6%9C%EB%A0%A5)
@@ -94,3 +98,9 @@
 9. [알파벳나열후 하나씩 없애기](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/09.%EC%95%8C%ED%8C%8C%EB%B2%B3%EB%82%98%EC%97%B4%ED%9B%84%20%ED%95%98%EB%82%98%EC%94%A9%20%EC%97%86%EC%95%A0%EA%B8%B0)
 10. [랜덤정수 평균출력](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/10.%20%EB%9E%9C%EB%8D%A4%EC%A0%95%EC%88%98%20%ED%8F%89%EA%B7%A0%EC%B6%9C%EB%A0%A5)
 11. [369박수](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/11.369%EB%B0%95%EC%88%98)
+
+</div>
+</details>
+
+
+

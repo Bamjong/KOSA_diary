@@ -85,7 +85,7 @@
 
 <details>
 <summary>1주차</summary>
-<div markdown="1">
+<div markdown="0">
 
 1. [성적판독기](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/01.%20%EC%84%B1%EC%A0%81%ED%8C%90%EB%8F%85%EA%B8%B0)
 2. [숫자 맞추기 게임](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/02.%20%EC%88%AB%EC%9E%90%20%EB%A7%9E%EC%B6%94%EA%B8%B0%20%EA%B2%8C%EC%9E%84)

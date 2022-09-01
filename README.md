@@ -3,6 +3,7 @@
 [한국소프트웨어산업협회] '대보정보통신&날리지큐브&헬스허브 채용확정형 SW개발자 양성과정'
 
 수업을 통해 배운것들을 정리하는 레파지토리입니다.
+## TIL
 
 ### 1일차
 
@@ -65,12 +66,31 @@
 3. [객체 배열](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day08_220830#3-%EA%B0%9D%EC%B2%B4-%EB%B0%B0%EC%97%B4--04_ex05_array_object-ex0507)
 4. [다차원 배열](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day08_220830#4-%EB%8B%A4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4multi-dimensional-array-04_ex08_array_rank
 )
+
 ### 9일차
 1. [로또 프로젝트](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day09_220831#%EB%A1%9C%EB%98%90)
 2. [영화예매 프로젝트](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day09_220831#%EC%98%81%ED%99%94%EC%98%88%EB%A7%A4)
+
 ### 10일차
 1. [상속과 포함관계](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#1-%EC%83%81%EC%86%8D%EA%B3%BC-%ED%8F%AC%ED%95%A8-%EA%B4%80%EA%B3%84-inheritance-composition--05_ex01_inherit-0103)
 2. [재정의](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#2-%EC%9E%AC%EC%A0%95%EC%9D%98overide-05_ex04_inherit_override-0406)
 3. [Super](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#3-super-05_ex06_inherit_super)
 4. [final](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#4-final-05_ex07_final)
 5. [finally / throws](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#5-finally--throws-07_ex07_final-0304)
+
+---
+
+## 조별과제
+
+### 1주차
+1. [성적판독기](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/01.%20%EC%84%B1%EC%A0%81%ED%8C%90%EB%8F%85%EA%B8%B0)
+2. [숫자 맞추기 게임](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/02.%20%EC%88%AB%EC%9E%90%20%EB%A7%9E%EC%B6%94%EA%B8%B0%20%EA%B2%8C%EC%9E%84)
+3. [양의 정수값 자릿수 출력](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/03.%20%EC%96%91%EC%9D%98%20%EC%A0%95%EC%88%98%EA%B0%92%20%EC%9E%90%EB%A6%BF%EC%88%98%20%EC%B6%9C%EB%A0%A5)
+4. [안녕하세요 메서드](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/04.%20%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%20%EB%A9%94%EC%84%9C%EB%93%9C)
+5. [1~n 정수의 합](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/05.%201~n%20%EC%A0%95%EC%88%98%EC%9D%98%20%ED%95%A9)
+6. [Circle 클래스 완성시키기] (https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/06.%20Circle%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%99%84%EC%84%B1%EC%8B%9C%ED%82%A4%EA%B8%B0)
+7. [자바클래스 연습](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/07.%20%EC%9E%90%EB%B0%94%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%97%B0%EC%8A%B5)
+8. [Grade클래스 작성](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/08.%20Grade%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%9E%91%EC%84%B1)
+9. [알파벳나열후 하나씩 없애기](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/09.%EC%95%8C%ED%8C%8C%EB%B2%B3%EB%82%98%EC%97%B4%ED%9B%84%20%ED%95%98%EB%82%98%EC%94%A9%20%EC%97%86%EC%95%A0%EA%B8%B0)
+10. [랜덤정수 평균출력](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/10.%20%EB%9E%9C%EB%8D%A4%EC%A0%95%EC%88%98%20%ED%8F%89%EA%B7%A0%EC%B6%9C%EB%A0%A5)
+11. [369박수](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/11.369%EB%B0%95%EC%88%98)

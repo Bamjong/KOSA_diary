@@ -39,6 +39,10 @@
 2. [자바 void,return 타입, Parameter](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#2-%EC%9E%90%EB%B0%94-voidreturn-%ED%83%80%EC%9E%85-parameter-03_fclassjava-16l)
 3. [관용적인 표현](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#3-%EA%B4%80%EC%9A%A9%EC%A0%81%EC%9D%B8-%ED%91%9C%ED%98%8403_fclassjava-54l)
 4. [Call 함수](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#4-call-%ED%95%A8%EC%88%9803_ex02_method_call-03_fclassjava)
+5. [설계도 작성](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#5-%EC%84%A4%EA%B3%84%EB%8F%84-%EC%9E%91%EC%84%B103_ex03_method_calljava-03_tvjava)
+6. [캡슐화](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#6-%EC%BA%A1%EC%8A%90%ED%99%9403_ex04_modifierjava-notebookjava)
+7. [클래스](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#7-%ED%81%B4%EB%9E%98%EC%8A%A403_ex04_modifierjava-notebookjava-mousejava)
+8. [Java 메모리 구조](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#8-java-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0)
 
 ### 6일차
 1. [getter/setter,롬복](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day06_220826#1-getter--setter-03_ex05_modifier-03_carjava)
@@ -48,12 +52,25 @@
 5. [객체간 공유자원](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day06_220826#5-%EA%B0%9D%EC%B2%B4%EA%B0%84-%EA%B3%B5%EC%9C%A0%EC%9E%90%EC%9B%90-03_ex10_static_method)
 
 ### 7일차
+1. [함수의 호출방식](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day07_220829#call-by-value-%EA%B0%92%EC%97%90-%EC%9D%98%ED%95%9C-%ED%98%B8%EC%B6%9C)
+2. [오버로딩(Overloading)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day07_220829#2-overloading--03_ex1314_method_overloading)
+3. [생성자(Constructor)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day07_220829#3-constructor%EC%83%9D%EC%84%B1%EC%9E%90-03_ex15_constructor)
+4. [예외처리(Exception)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day07_220829#4-exception%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC-07_ex0102_exception)
+5. [This(이것)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day07_220829#5-this-03_ex19_this)
 
 
 ### 8일차
-
-
+1. [배열(Array)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day08_220830#1-%EB%B0%B0%EC%97%B4array-04_ex01_array_basic-ex0203-)
+2. [개선된 for문](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day08_220830#2-%EA%B0%9C%EC%84%A0%EB%90%9C-for%EB%AC%B8-04_ex04_array_for)
+3. [객체 배열](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day08_220830#3-%EA%B0%9D%EC%B2%B4-%EB%B0%B0%EC%97%B4--04_ex05_array_object-ex0507)
+4. [다차원 배열](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day08_220830#4-%EB%8B%A4%EC%B0%A8%EC%9B%90-%EB%B0%B0%EC%97%B4multi-dimensional-array-04_ex08_array_rank
+)
 ### 9일차
-
-
+1. [로또 프로젝트](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day09_220831#%EB%A1%9C%EB%98%90)
+2. [영화예매 프로젝트](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day09_220831#%EC%98%81%ED%99%94%EC%98%88%EB%A7%A4)
 ### 10일차
+1. [상속과 포함관계](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#1-%EC%83%81%EC%86%8D%EA%B3%BC-%ED%8F%AC%ED%95%A8-%EA%B4%80%EA%B3%84-inheritance-composition--05_ex01_inherit-0103)
+2. [재정의](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#2-%EC%9E%AC%EC%A0%95%EC%9D%98overide-05_ex04_inherit_override-0406)
+3. [Super](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#3-super-05_ex06_inherit_super)
+4. [final](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#4-final-05_ex07_final)
+5. [finally / throws](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#5-finally--throws-07_ex07_final-0304)

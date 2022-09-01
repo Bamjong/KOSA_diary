@@ -3,7 +3,10 @@
 [한국소프트웨어산업협회] '대보정보통신&날리지큐브&헬스허브 채용확정형 SW개발자 양성과정'
 
 수업을 통해 배운것들을 정리하는 레파지토리입니다.
-## TIL
+
+
+<details>
+<summary>TIL(Today I Learned)</summary>
 
 ### 1일차
 
@@ -78,7 +81,13 @@
 4. [final](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#4-final-05_ex07_final)
 5. [finally / throws](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#5-finally--throws-07_ex07_final-0304)
 
+</div>
+</details>
+
+
 ---
+
+
 
 ## 조별과제
 

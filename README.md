@@ -88,7 +88,7 @@
 3. [양의 정수값 자릿수 출력](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/03.%20%EC%96%91%EC%9D%98%20%EC%A0%95%EC%88%98%EA%B0%92%20%EC%9E%90%EB%A6%BF%EC%88%98%20%EC%B6%9C%EB%A0%A5)
 4. [안녕하세요 메서드](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/04.%20%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%20%EB%A9%94%EC%84%9C%EB%93%9C)
 5. [1~n 정수의 합](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/05.%201~n%20%EC%A0%95%EC%88%98%EC%9D%98%20%ED%95%A9)
-6. [Circle 클래스 완성시키기] (https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/06.%20Circle%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%99%84%EC%84%B1%EC%8B%9C%ED%82%A4%EA%B8%B0)
+6. [Circle 클래스 완성시키기](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/06.%20Circle%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%99%84%EC%84%B1%EC%8B%9C%ED%82%A4%EA%B8%B0)
 7. [자바클래스 연습](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/07.%20%EC%9E%90%EB%B0%94%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%97%B0%EC%8A%B5)
 8. [Grade클래스 작성](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/08.%20Grade%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%9E%91%EC%84%B1)
 9. [알파벳나열후 하나씩 없애기](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/09.%EC%95%8C%ED%8C%8C%EB%B2%B3%EB%82%98%EC%97%B4%ED%9B%84%20%ED%95%98%EB%82%98%EC%94%A9%20%EC%97%86%EC%95%A0%EA%B8%B0)

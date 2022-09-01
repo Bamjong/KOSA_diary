@@ -6,4 +6,4 @@
 
 ### 1일차
 
-1. [자바 JDK와 JRE](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day01_220819#1-%EC%9E%90%EB%B0%94-jdk%EC%99%80-jre)
+1.  [자바 JDK와 JRE](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day01_220819#1-%EC%9E%90%EB%B0%94-jdk%EC%99%80-jre)

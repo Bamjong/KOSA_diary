@@ -35,10 +35,17 @@
 5. [private 캡슐화 getter/setter](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day04_220824#5-private-%EC%BA%A1%EC%8A%90%ED%99%94-getter--setter-03_emp)
 
 ### 5일차
-
+1. [class설계도 개념과 작성방법](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#1-class%EC%84%A4%EA%B3%84%EB%8F%84-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9E%91%EC%84%B1%EB%B0%A9%EB%B2%95-03_personjava)
+2. [자바 void,return 타입, Parameter](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#2-%EC%9E%90%EB%B0%94-voidreturn-%ED%83%80%EC%9E%85-parameter-03_fclassjava-16l)
+3. [관용적인 표현](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#3-%EA%B4%80%EC%9A%A9%EC%A0%81%EC%9D%B8-%ED%91%9C%ED%98%8403_fclassjava-54l)
+4. [Call 함수](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day05_220825#4-call-%ED%95%A8%EC%88%9803_ex02_method_call-03_fclassjava)
 
 ### 6일차
-
+1. [getter/setter,롬복](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day06_220826#1-getter--setter-03_ex05_modifier-03_carjava)
+2. [자바의 변수](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day06_220826#2-%EC%9E%90%EB%B0%94%EC%9D%98-%EB%B3%80%EC%88%98-03_ex05_modifier-03_carjava)
+3. [Static](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day06_220826#3-static)
+4. [초기자블럭](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day06_220826#4-%EC%B4%88%EA%B8%B0%EC%9E%90%EB%B8%94%EB%9F%AD-03_ex09_static_init)
+5. [객체간 공유자원](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day06_220826#5-%EA%B0%9D%EC%B2%B4%EA%B0%84-%EA%B3%B5%EC%9C%A0%EC%9E%90%EC%9B%90-03_ex10_static_method)
 
 ### 7일차
 

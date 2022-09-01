@@ -4,7 +4,7 @@
 
 수업을 통해 배운것들을 정리하는 레파지토리입니다.
 
-
+## 배운내용
 <details>
 <summary>TIL(Today I Learned)</summary>
 

@@ -87,8 +87,6 @@
 </div>
 </details>
 
----
-
 
 <details>
 <summary>10~20일차</summary>

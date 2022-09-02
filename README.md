@@ -94,8 +94,9 @@
 <summary>10~20일차</summary>
 
 ### 11일차
+1. [String 클래스](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day11_220902#1-string-class%EC%8A%A4%ED%8A%B8%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8A%A4--07_ex05_string_class-0507-krorkosa--ex05_string_class-)
 
-
+2. [Protected](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day11_220902#2-protected)
 
 </div>
 </details>

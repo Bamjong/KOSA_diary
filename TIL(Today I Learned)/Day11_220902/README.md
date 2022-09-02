@@ -2,7 +2,7 @@
 <br>
 
 
-## 1. String Class(스트링 클래스)  (*05_Ex01_Inherit 01~03···)
+## 1. String Class(스트링 클래스)  (*07_Ex05_String_Class 05~07, kr.or.kosa  Ex05_String_Class ···)
 ---
 - String 클래스 (문자열)
 - String 수 많은 함수 ... 문자열 조작(자르고, 합치고 ...)
@@ -81,4 +81,142 @@ System.out.println(filename2.indexOf("."));
     
     System.out.println("파일명 : " + filename2.substring(0,a));
     System.out.println("확장자 : " + filename2.substring(++a));
+```
+### 퀴즈!
+    주민번호 : 뒷번호 첫자리 : 1,3 남자 , 2,4 여자 라고 출력 ... 하는 문제
+    main 함수 Scanner  사용 주민번호 입력받고
+    앞:6자리     뒷:7자리
+
+    입력값 : 123456-1234567 
+
+    static 
+    1. 자리수 체크 (기능)함수 (14 ok)  return true , false 
+    2. 뒷번호 첫번째 자리값 1~4까지의 값만 허용 기능함수  return true, false
+    3. 뒷번호 첫번째 자리값을 가지고 1,3 남자 , 2,4 여자 출력 기능함수  void  출력
+
+```java
+import java.util.Scanner;
+
+public class Ex07_String_Total_Quiz {
+	
+	static boolean juminCheck(String str) {
+		return str.length() == 14 ? true : false;
+	}
+
+	static boolean JunminFirstNumber(String str) {
+		boolean numcheck = false;
+		int num = Integer.parseInt(str.substring(7, 8));
+		if (num > 0 && num < 5) {
+			numcheck = true;
+		}
+		return numcheck;
+	}
+	static void JuminDisplay(String ssn) {
+		// CASE1 >
+		// String gender= ssn.replace("-","").substring(6,7);
+		// int numgender = Integer.parseInt(gender);
+		// if(numgender%2 == 0)System.out.println("여자");
+		// if(numgender%2 == 1)System.out.println("남자");
+
+		// CASE2 >
+		char cgen = ssn.replace("-", "").charAt(6);
+		// 123456-1234567 -> 1234561234567 > 123456[1]234567 추출> '1'
+		switch (cgen) {
+			case '1': // break 생략
+			case '3':
+				System.out.println("남자^^");
+				break;
+			case '2': // break 생략
+			case '4':
+				System.out.println("여자^^");
+				break;
+			default:
+				System.out.println("중성");
+		}
+	}
+	
+	public static void main(String[] args) {
+		String ssn = "";
+		do {
+			Scanner sc = new Scanner(System.in);
+			System.out.print("주민번호 입력:");
+			ssn = sc.nextLine();
+		} while (!juminCheck(ssn) || !JunminFirstNumber(ssn));
+		// 둘다 true 인경우  > false || false 탈출
+		// !true || !true => false || false 탈출
+		JuminDisplay(ssn);
+	}
+
+}
+```
+
+## 2. Protected
+    상속관계에서 ... 접근자 : protected
+
+    public 
+    private
+    default (같은 폴더)
+    protected
+
+    protected : 양면성(박쥐) >> default , public 
+    >>상속이 없는 클래스 안에서 protected >> default 동일 
+    >>결국 상속관계에서만 의미를 가진다 >> public 
+
+    ```java
+    import kr.or.kosa.Bird;
+
+//설계자 
+
+class Bi extends Bird {
+	
+	@Override
+	public void moveFast() {
+		//마음대로 ...
+		super.moveFast(); // 
+	}
+}
+
+class Ostrich extends Bird {
+	//구체화 , 특수화
+	void run() {
+		System.out.println("run ...");
+	}
+	
+	@Override
+	public void moveFast() {
+		run();
+	}
+}
+
+public class Ex09_Inherit_Protected {
+
+	public static void main(String[] args) {
+		Bi b = new Bi();
+		b.fly();
+		b.moveFast();
+		//moveFast() 상속관계에서 재정의 하지 않으면  당신은 사용 안되 (강제)
+
+		Ostrich o = new Ostrich();
+		o.run();
+		o.moveFast();
+	}
+
+}
+```
+```java
+
+package kr.or.kosa;
+
+//새(공통:일반,추상) : 새는 날수 있다 , 새는 빠르다 
+public class Bird {
+	//공통기능
+	public void fly() {
+		System.out.println("flying");
+	}
+	
+	//설계자 고민 : Bird [상속]하는 당신은 moveFast 자원에 대해서 [재정의] 했으면 좋겠어 90%
+	protected void moveFast() {
+		fly();
+	}
+}
 ```

@@ -5,8 +5,10 @@
 수업을 통해 배운것들을 정리하는 레파지토리입니다.
 
 ## 배운내용
+
 <details>
-<summary>TIL(Today I Learned)</summary>
+<summary>01~10일차</summary>
+
 
 ### 1일차
 
@@ -81,16 +83,13 @@
 4. [final](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#4-final-05_ex07_final)
 5. [finally / throws](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#5-finally--throws-07_ex07_final-0304)
 
-</div>
-</details>
-
 
 ---
 
-
+</div>
+</details>
 
 ## 조별과제
-
 
 <details>
 <summary>1주차</summary>
@@ -110,5 +109,11 @@
 </div>
 </details>
 
+<details>
+<summary>2주차</summary>
 
+아직 없서용
+
+</div>
+</details>
 

@@ -84,7 +84,14 @@
 5. [finally / throws](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day10_220901#5-finally--throws-07_ex07_final-0304)
 
 
----
+</div>
+</details>
+
+<details>
+<summary>10~20일차</summary>
+
+### 10일차
+와랄라!
 
 </div>
 </details>

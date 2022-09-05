@@ -1,5 +1,7 @@
-![이미지](1.jpg)
-![이미지](2.jpg)
+
+<img src="1.jpg" width="70%">
+<img src="2.jpg" width="40%">
+
 
     이번 챕터에서 get을 왜 쓰는지와 super을 쓰는 이유를 알게되었다.
 

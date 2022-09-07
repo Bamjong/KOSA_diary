@@ -6,7 +6,9 @@
 
 <br>
 
-우리조가 작성한 코드
+<details>
+<summary>코드</summary>
+
 ```java
 interface breed{
 boolean bady(); //true : 새끼, false : 알 
@@ -177,14 +179,15 @@ public class Zoo {
 }
 ```
 
+</div>
+</details>
+
 이를 바탕으로 Class 다이어그램 작성
 ![이미지](https://cafeptthumb-phinf.pstatic.net/MjAyMjA5MDdfMjAz/MDAxNjYyNTE4NTIwOTAy.H2v2RZjPyDMZsm2iiIbIjWn98twzd7MmIHrPYmJSK-4g.1GkWnD-qJJMpMJMeX48Bo5ianqsJaJCYBwMOzT7jgIMg.PNG/2%EC%A1%B0.png?type=w1600)
 
 <br><br><Br>
 
-# 클래스 실습
-
-## 조별과제 Class(UML) 그리기
+# 조별과제 Class(UML) 그리기
     클래스 다이어그램
 
     Product
@@ -198,6 +201,8 @@ public class Zoo {
 
 
 
+<details>
+<summary>코드</summary>
 
 ```java
 class Product{
@@ -260,7 +265,44 @@ class Buyer{
 }
 
 ```
+</div>
+</details>
 
+### 위 코드를 기반으로 작성한 클래스 다이어그램)
 ![image](https://user-images.githubusercontent.com/92353613/188844705-4c1574fd-f695-4856-836a-0bedf308d479.png)
 
 
+<br><br><br>
+
+# UML 자판기 요구사항 만들어 보기
+
+![이미지](https://cafeptthumb-phinf.pstatic.net/MjAyMjA5MDdfMjUz/MDAxNjYyNTM0Mzc4MzI1.Nh1AP1HDs58Piy_1WAAzwVjhtSZHWxiqLlQkZ8gEp9Ag.RzGAHwGCiM5u7WHKVbKOCgpWVhJCsBUgm51BXyymw0wg.PNG/22.09.07__%EC%98%A4%ED%9B%84_%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC.PNG?type=w1600)
+
+위 유스케이스의 시나리오 
+
+	<시나리오>
+
+	관리자는 키오스크에 상품을 등록할 수 있다(Insertingitem). 
+
+	관리자는 키오스크 시스템을 구동할 수 있다. (Starting system)
+
+	관리자는 키오스크 시스템을 종료할 수 있다(Stop System). 
+
+	관리자는 매니징 시스템을 이용할 수 있다(매출확인 등 Managing system) 
+
+	​
+
+	고객은 키오스크에 등록된 상품을 선택할 수 있다.(selecting menu)
+
+	상품을 선택한 후 수량을 선택할 수 있다. (selecting count)
+
+	결제를 할 때 포인트 적립을 할 수도 있다(saving point). 
+
+	사용자가 상품 선택을 완료하면 결제를 할 수 있다. (payment)
+
+	​
+	결제가 완료되면 관리자에게 주문이 넘어간다.
+
+위 유스케이스의 기술서
+
+![이미지](https://cafeptthumb-phinf.pstatic.net/MjAyMjA5MDdfMjE0/MDAxNjYyNTM2OTI4MTAz.Y-P3mE3r-UqRrSHlFVo96F1DVTjBpj-0hKYU2pS0Y0Ag.eBIWwj5-Oc8_JKAFGv10uGmiFtac2aLgduQBqXre4NIg.PNG/%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC.png?type=w1600)

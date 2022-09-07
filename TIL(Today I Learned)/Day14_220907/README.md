@@ -22,7 +22,8 @@
 
 ![이미지](https://www.nextree.co.kr/content/images/2021/01/--3----.png)
 #### 클래스 다이어그램의 요소(Element)
-    클래스는 보통 3개의 compartment(구획)으로 나누어 클래스의 이름, 속성, 기능을 표기합니다. 속성과 기능은 옵션으로 생략이 가능하지만 이름은 필수로 명시해야 합니다.
+    클래스는 보통 3개의 compartment(구획)으로 나누어 클래스의 이름, 속성, 기능을 표기합니다.
+    속성과 기능은 옵션으로 생략이 가능하지만 이름은 필수로 명시해야 합니다.
     
 ![이미지](https://gmlwjd9405.github.io/images/class-diagram/access-controller.png)
 
@@ -47,7 +48,8 @@
 
 ![이미지](https://www.nextree.co.kr/content/images/2021/01/--6-----------.png)
 #### 클래스간의 관계 표현법
-    클래스 다이어그램의 주 목적은 클래스간의 관계를 한눈에 쉽게 보고 의존 관계를 파악하는 것에 있습니다. 그렇기 때문에 클래스 다이어그램에서 가장 중요한 것이 클래스간의 관계입니다.
+    클래스 다이어그램의 주 목적은 클래스간의 관계를 한눈에 쉽게 보고 의존 관계를 파악하는 것에 있습니다.
+    그렇기 때문에 클래스 다이어그램에서 가장 중요한 것이 클래스간의 관계입니다.
 
 ![이미지](https://www.nextree.co.kr/content/images/2021/01/--7-Generalization1.png)
 #### Generalization (일반화)
@@ -73,4 +75,4 @@
     어디서?
     함수 내에서.
 
-나머지는 [출처](https://www.nextree.co.kr/p6753/) 이곳에서 자세히 살펴보도록 하자.
+나머지는 [이곳](https://www.nextree.co.kr/p6753/)에서 자세히 살펴보도록 하자.

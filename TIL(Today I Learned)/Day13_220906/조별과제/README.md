@@ -58,6 +58,10 @@
 
     ex) 고래와 박쥐는 포유류로 묶을수 있다!
 
+
+<details>
+<summary>코드</summary>
+
 ```java
 interface breed{
 	boolean bady(); //true : 새끼, false : 알 
@@ -212,8 +216,6 @@ class makeAnimal{
 
 
 
-
-
 public class Zoo {
 
 	public static void main(String[] args) {
@@ -232,6 +234,9 @@ public class Zoo {
 
 }
 ```
+
+</div>
+</details>
 
 
 ### 출력

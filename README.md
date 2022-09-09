@@ -117,6 +117,21 @@
 4. [인터페이스 (interface)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day13_220906#4-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-interface-06_ex03_interface_poly-1516)
 
 
+### 14일차
+
+1. [UML(Unified Modeling Language)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day14_220907#1-umlunified-modeling-language----06_ex01_abstract_class-0102)
+
+2. [Class(클래스) 다이어그램](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day14_220907#class%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
+
+3. [UseCase(유스케이스) 다이어그램](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day14_220907#usecase%EC%9C%A0%EC%8A%A4%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
+
+
+
+### 15일차
+
+1. [Collection framework(컬랙션)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Day15_220908#1-collection-framework%EC%BB%AC%EB%9E%99%EC%85%98---08_ex01_vector-0103)
+
+
 </div>
 </details>
 

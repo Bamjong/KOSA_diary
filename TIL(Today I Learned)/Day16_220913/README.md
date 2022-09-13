@@ -2,11 +2,7 @@
 <br>
 
 
-## 1. Collection framework(컬랙션)   (*08_Ex04_ArrayList 04~0)
-
-
-
-## 2. Generic(제너릭) (*08_Ex05_Generic)
+## 1. Generic(제너릭) (*08_Ex05_Generic)
 
 #### 왜 생겨났나요?
     Collection 타입의 클래스 >> 데이터 기본 저장 공간 타입 : Object
@@ -44,7 +40,7 @@ public class Ex05_Generic {
 ```
 <br>
 
-## 3. Stack // Queue(스택 / 큐) (*08_Ex06_Stack_Queue 06~07)
+## 2. Stack // Queue(스택 / 큐) (*08_Ex06_Stack_Queue 06~07)
 ![이미지](https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fcafeptthumb4.phinf.naver.net%2F20150216_25%2Fkscom444_1424085885304BE2Yv_PNG%2Fstack3.png%3Ftype%3Dw740%22&type=cafe_wa740)
 ![이미지](https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fcafeptthumb2.phinf.naver.net%2F20150216_297%2Fkscom444_1424085862170kgUNm_PNG%2Fqueue3.png%3Ftype%3Dw740%22&type=cafe_wa740)
 
@@ -74,7 +70,7 @@ public class Ex05_Generic {
 
 <br><br>
 
-## 4. Iterator() (*08_Ex09_Collection_Iterator)
+## 3. Iterator() (*08_Ex09_Collection_Iterator)
 표준화된 인터페이스
 
 	자바의 컬렉션 프레임워크에서 컬렉션에 저장되어 있는 요소들을 읽어오는 방법을 표준화한 것이다.
@@ -95,7 +91,7 @@ Iterator 메소드에는 hasNext(), next(), remove()가 있다.
 메소드 호출 순서는 hasNext() -> next() -> remove()이다.
 
 
-## 5. Set (*08_Ex10_Set 10~12)
+## 4. Set (*08_Ex10_Set 10~12)
 
 	Set 인터페이스 (원 안에 들어가세요) : 순서보장(X), 중복 (X)
 	순서가 없고 중복을 허락하지 않는 데이터 집합
@@ -110,7 +106,7 @@ Iterator 메소드에는 hasNext(), next(), remove()가 있다.
 
 <br><br>
 
-## 6. Map (*08_Ex13_Map_Interface 13~14)
+## 5. Map (*08_Ex13_Map_Interface 13~14)
 
 Map 인터페이스
 

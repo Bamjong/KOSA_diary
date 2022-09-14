@@ -124,3 +124,16 @@ Map 인터페이스 구현하는 클래스
 
 	구버전 : HashTable (동기화 보장) : 한강 화장실 (lock) 자원 보호
 	신버전 : HashMap	 (동기화 강제하지 않아요) 성능고려 (Thread 학습....) ****
+
+
+
+
+
+
+List<Product> pcart = new ArrayList<Product>();		//ArrayLIst		
+List<Product> pcart = new LinkedList<Product>();	//LinkedList	
+
+Set<String> hs = new HashSet<>();					//HashSet	
+Set<Integer> lotto = new TreeSet<>();				//TreeSet	
+
+Map map = new HashMap();							//HashMap

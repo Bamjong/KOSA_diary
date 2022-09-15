@@ -173,16 +173,16 @@ Integer i2 = new Integer(100);
 
 * Calendar 를 상속받아 완전히 구현한 클래스는 
 * GregorianCalendar 
-* buddhisCalendar 있는데 getInstance()는 [시스템의 국가와 지역설정]을 [확인]해서
+* buddhisCalendar 있는데 getInstance()는 [시스템의 국가와 지역설정]을 [확인]한 후
 
-        태국인 경우 buddhisCalendar 의 인스턴스를 반환하고
-        그 외에는 GregorianCalendar 의 인스턴스를 반환한다 
+    - 태국인 경우 buddhisCalendar 의 인스턴스를 반환하고
+    - 그 외에는 GregorianCalendar 의 인스턴스를 반환한다 
 
 
-        GregorianCalendar 는 Calendar를 상속받아 오늘날 전세계 공통으로 사용하고 있는 
-        그레고리력에 맞게 구현한 것으로 태국을 제외한 나머지 국가에서는 GregorianCalendar 사용
-        그래서 인스턴스를 직접 생성해서 사용하지 않고 메서드를 통해서 인스턴스를 반환받게하는
-        이유는 최소의 변경으로 프로그램 동작을 하도록 하기 위함
+    GregorianCalendar 는 Calendar를 상속받아 오늘날 전세계 공통으로 사용하고 있는 
+    그레고리력에 맞게 구현한 것으로 태국을 제외한 나머지 국가에서는 GregorianCalendar 사용
+    그래서 인스턴스를 직접 생성해서 사용하지 않고 메서드를 통해서 인스턴스를 반환받게하는
+    이유는 최소의 변경으로 프로그램 동작을 하도록 하기 위함
 
 [ 소스 ]
 ```java

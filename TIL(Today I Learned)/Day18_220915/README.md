@@ -93,7 +93,7 @@ System.out.println(result);
 
 <br><br>
 
-## 3. I/O (Input/Output) (입출력) (*09_Ex01_Stream 01~06)
+## 3. I/O (Input/Output) (입출력) (*09_Ex01_Stream 01~09)
 
 ### Steram(스트림)
 
@@ -135,3 +135,173 @@ System.out.println(result);
 
     I/O 자원은 개발자가 직접적으로 자원에 해제 (여러 사용자들이 접근 사용 가능)
     >> close() 
+
+### Buffer (*09_Ex04_Stream_Buffer)
+
+여러 학생을 [모아]서 하나의 [버스]에 태워서 목적지 ... 놀면  
+버스 : buffer
+1. I/O 성능 개선 (접근 횟수 줄이기)
+2. Line 단위 (엔터)
+
+    BufferedInputStream(보조 스트림) >> 주 클래스에 의존
+
+#### JAVA Buffer 크기 (8k byte : 8192byte : 16384 byte)      <- 알고있으면 좋음
+
+1. buffer 안에 내용이 채워지면 스스로 출발 (버퍼를 비우는 작업)
+2. 강제로 출발 (buffer 강제로 비우기) : flush() or close()
+3. close() 자원해제 >> 내부적으로 flush() 호출 >> 자원해제
+
+
+
+[출력]
+
+    C:\asdf\JAVA\Labs\Ex09_IO\bin>java Ex08_File_Dir ../../../../../Temp  
+    [DIR]a
+    a.txt
+    [DIR]b
+    file.txt
+    java.jpg
+    new.txt
+
+### 기본 입출력 해보기 (*조별과제)
+
+<br>
+
+[기본 소스]
+```java
+FileReader fr = null;
+FileWriter fw = null;
+BufferedReader br = null;
+BufferedWriter bw = null;
+```
+
+    기본적으로 4개가 필요하다
+
+<br>
+
+[쓰기]
+```java
+fw = new FileWriter("Lotto.txt", true);  //false = 덮어쓰기 // true = 추가하기
+bw = new BufferedWriter(fw);
+bw.write("로또번호: " + lotto.toString() + " " + time);
+bw.newLine();
+bw.flush();
+```
+
+    FileWriter를 작성하여 BufferWriter에게 넘겨준다
+    bw.write()를 작성하여 입력하고
+    bw.newLine()를 작성하여 줄띄워주고
+    bw.flush()를 통해 버퍼가 안차더라도 넘겨준다.
+
+<br>
+
+[읽기]
+```java
+fr = new FileReader("Lotto.txt");	
+br = new BufferedReader(fr);
+
+String line = "";
+
+//	for (int i = 0; (line=br.readLine())!=null; i++) {
+//		System.out.println(line);
+//	}
+
+while ((line=br.readLine())!=null) {
+    System.out.println(line);
+}
+```
+
+    br.readLine()을 통해 버퍼 날라온걸 받아주고 써내려간다
+    for문이랑 while문 작성해보았다.
+
+
+<br><br>
+
+### File_Dir 구현하기
+
+[소스]
+```java
+public static void main(String[] args) {
+    //System.out.println(args[0]);
+    if(args.length != 1) {
+        System.out.println("사용법 : java 파일명 [디렉토리명]");
+        System.exit(0);//강제종료
+    }
+    //java Ex08_File_Dir C:\\Temp
+    File f = new File(args[0]);
+    if(!f.exists() || !f.isDirectory()) {
+        //둘중에 하나라도 만족하지 않으면
+        //존재하지 않거나 또는 디렉토리가 아니라면
+        System.out.println("유효하지 않은 경로입니다");
+        System.exit(0);
+    }
+    
+    //실제 존재하는 경로이고 제시한것이 폴더라면
+    //POINT
+    File[] files = f.listFiles(); 
+    //C:\\Temp 안에 폴더나 파일을 배열에 담아서 ....
+    //[a.txt][b.txt][][]
+    //System.out.println(files.length);
+    for(int i = 0 ; i < files.length ;i++) {
+        String name= files[i].getName();
+        System.out.println(files[i].isDirectory() ? "[DIR]" + name : name);
+    }
+    
+}
+```
+
+[CMD]
+
+    C:\KOSA_IT\JAVA\Labs\Ex09_IO\bin>java Ex08_File_Dir ../../../../../Temp
+    [DIR]a
+    a.txt
+    [DIR]b
+    file.txt
+    java.jpg
+    new.txt
+
+
+### FIle_Dir 구현하기2
+
+
+[소스]
+```java
+public static void main(String[] args) {
+    File dir = new File("C:\\Temp");
+    File[] files = dir.listFiles();
+    
+    for(int i = 0 ; i < files.length ;i++) {
+        File file = files[i];
+        
+        String name = file.getName(); //폴더명 or 파일명 
+        SimpleDateFormat dt = new SimpleDateFormat("yyyy-MM-dd HH-mma");
+        String attribute="";
+        String size="";
+        
+        if(files[i].isDirectory()) { //폴더니 질문
+            attribute="<DIR>";
+        }else { //다 파일( 1.jpg, data.txt ...
+            size = file.length() + "byte";
+            attribute = file.canRead()   ? "R" :"";
+            attribute += file.canWrite() ? "W" :"";
+            attribute += file.isHidden() ? "H" :"";
+            
+        }
+        System.out.printf("%s  %3s  %10s  %s  \n",
+                            dt.format(new Date(file.lastModified())),
+                            attribute,
+                            size,
+                            name);
+    }
+
+}
+```
+
+[출력]
+
+    2022-09-15 16-58오후  <DIR>              a  
+    2022-09-15 11-10오전   RW       5byte  a.txt  
+    2022-09-15 16-58오후  <DIR>              b  
+    2022-09-15 16-29오후   RW       0byte  file.txt  
+    2022-09-15 11-50오전   RW  229277byte  java.jpg  
+    2022-09-15 12-22오후   RW       5byte  new.txt  

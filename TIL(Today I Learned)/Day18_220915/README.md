@@ -145,7 +145,7 @@ System.out.println(result);
 
     BufferedInputStream(보조 스트림) >> 주 클래스에 의존
 
-#### JAVA Buffer 크기 (8k byte : 8192byte : 16384 byte)      <- 알고있으면 좋음
+#### JAVA Buffer 크기 (8192 Char : 16384 byte)      <- 알고있으면 좋음
 
 1. buffer 안에 내용이 채워지면 스스로 출발 (버퍼를 비우는 작업)
 2. 강제로 출발 (buffer 강제로 비우기) : flush() or close()

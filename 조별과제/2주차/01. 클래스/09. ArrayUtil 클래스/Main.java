@@ -6,7 +6,14 @@ class ArrayUtil{
         for(; i<a.length; i++) {
             temp[i] = a[i];
         }
-        for(;i<a.length+b.length;i++) {
+
+
+        System.out.println(i);
+
+        System.out.println(i-a.length);
+
+
+        for(;i<temp.length;i++) {
         temp[i] = b[i-a.length];
         }
         return temp;

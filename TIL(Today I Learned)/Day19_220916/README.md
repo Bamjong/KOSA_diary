@@ -89,7 +89,7 @@ public class Ex10_File_SubList {
 }
 ```
 
-## 2. 보조스트림
+### 보조스트림
     DataOutPutStream
     DataInputStream
 
@@ -111,7 +111,7 @@ public class Ex10_File_SubList {
     FileInputStream
     DataInputStream 자료형까지 받음
 
-## 2. 직렬화(serialization) - ObjectOutputStream (*09_Ex15_ObjectDataOutPutStream 15~16)
+### 직렬화(serialization) - ObjectOutputStream (*09_Ex15_ObjectDataOutPutStream 15~16)
 
 클래스 뒤쪽에 ***"implements Serializable"*** 를 적어주면 직렬화 클래스로 인식
 

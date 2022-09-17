@@ -158,7 +158,7 @@
 <details>
 <summary>2주차</summary>
 
-아직 없서용~!!
+곧 생겨용~
 
 </div>
 </details>

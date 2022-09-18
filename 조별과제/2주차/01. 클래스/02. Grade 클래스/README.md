@@ -1,3 +1,3 @@
 ![이미지](../%EB%AC%B8%EC%A0%9C%20%EC%82%AC%EC%A7%84/01-02%EB%B2%88.jpg)
 
-[링크](../../../../%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/01.%20%EC%84%B1%EC%A0%81%ED%8C%90%EB%8F%85%EA%B8%B0/)
+[링크](../../../../TIL(Today%20I%20Learned)/1일차)

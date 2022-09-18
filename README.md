@@ -168,7 +168,7 @@
 <details>
 <summary>20~29일차</summary>
 
-1.[곧 생겨용](https://github.com/Bamjong/KOSA_diary)
+1. [곧 생겨용](https://github.com/Bamjong/KOSA_diary)
 
 
 

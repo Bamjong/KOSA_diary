@@ -95,13 +95,11 @@
 
 ### 11일차
 1. [String 클래스](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day11_220902#1-string-class%EC%8A%A4%ED%8A%B8%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8A%A4--07_ex05_string_class-0507-krorkosa--ex05_string_class-)
-
 2. [Protected](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day11_220902#2-protected)
 
 ### 12일차
 
 1. [다형성(Polymorphism)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day12_220905#1-%EB%8B%A4%ED%98%95%EC%84%B1polymorphism--05_ex10_inherit_poly-1014-)
-
 2. [싱글톤패턴(Singleton)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day12_220905#2-%EC%8B%B1%EA%B8%80%ED%86%A4%ED%8C%A8%ED%84%B4singleton--05_singleton-)
 
 3. [추상클래스(abstract)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day12_220905#3-%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4abstract----06_ex01_abstract_class)
@@ -109,20 +107,15 @@
 ### 13일차
 
 1. [추상클래스(abstract)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day13_220906#1-%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4abstract----06_ex01_abstract_class-0102)
-
 2. [업캐스팅 // 다운캐스팅](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day13_220906#2-%EC%97%85%EC%BA%90%EC%8A%A4%ED%8C%85--%EB%8B%A4%EC%9A%B4%EC%BA%90%EC%8A%A4%ED%8C%85)
-
 3. [instanceof 연산자](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day13_220906#3-instanceof-%EC%97%B0%EC%82%B0%EC%9E%90)
-
 4. [인터페이스 (interface)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day13_220906#4-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-interface-06_ex03_interface_poly-1516)
 
 
 ### 14일차
 
 1. [UML(Unified Modeling Language)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day14_220907#1-umlunified-modeling-language----06_ex01_abstract_class-0102)
-
 2. [Class(클래스) 다이어그램](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day14_220907#class%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
-
 3. [UseCase(유스케이스) 다이어그램](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day14_220907#usecase%EC%9C%A0%EC%8A%A4%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
 
 

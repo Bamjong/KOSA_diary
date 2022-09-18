@@ -162,6 +162,15 @@
 3. [I/O 보조스트림](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day19_220916#%EB%B3%B4%EC%A1%B0%EC%8A%A4%ED%8A%B8%EB%A6%BC)
 4. [I/O serialization (직렬화)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day19_220916#%EC%A7%81%EB%A0%AC%ED%99%94serialization---objectoutputstream-09_ex15_objectdataoutputstream-1516)
 
+</div>
+</details>
+
+<details>
+<summary>20~29일차</summary>
+
+1.[곧 생겨용](https://github.com/Bamjong/KOSA_diary)
+
+
 
 </div>
 </details>

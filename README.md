@@ -9,13 +9,18 @@
 ## 배운내용
 
 <details>
-<summary>01~10일차</summary>
+<summary>Java 문법</summary>
+
+
+
+<details>
+<summary>01~09일차</summary>
 
 
 ### 1일차
 
-1.  [자바 JDK와 JRE](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day01_220819#1-%EC%9E%90%EB%B0%94-jdk%EC%99%80-jre)
-2.  [자바 메모리 구조](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day01_220819#4-%EC%9E%90%EB%B0%94-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0)
+1. [자바 JDK와 JRE](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day01_220819#1-%EC%9E%90%EB%B0%94-jdk%EC%99%80-jre)
+2. [자바 메모리 구조](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day01_220819#4-%EC%9E%90%EB%B0%94-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0)
 3. [public 과 private 차이](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day01_220819#7-public%EA%B3%BC-private%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 
 ### 2일차
@@ -78,7 +83,17 @@
 1. [로또 프로젝트](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day09_220831#%EB%A1%9C%EB%98%90)
 2. [영화예매 프로젝트](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day09_220831#%EC%98%81%ED%99%94%EC%98%88%EB%A7%A4)
 
+
+</details>
+</div>
+
+
+<details>
+<summary>10~19일차</summary>
+
+
 ### 10일차
+
 1. [상속과 포함관계](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day10_220901#1-%EC%83%81%EC%86%8D%EA%B3%BC-%ED%8F%AC%ED%95%A8-%EA%B4%80%EA%B3%84-inheritance-composition--05_ex01_inherit-0103)
 2. [재정의](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day10_220901#2-%EC%9E%AC%EC%A0%95%EC%9D%98overide-05_ex04_inherit_override-0406)
 3. [Super](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day10_220901#3-super-05_ex06_inherit_super)
@@ -86,14 +101,8 @@
 5. [finally / throws](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day10_220901#5-finally--throws-07_ex07_final-0304)
 
 
-</div>
-</details>
-
-
-<details>
-<summary>10~20일차</summary>
-
 ### 11일차
+
 1. [String 클래스](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day11_220902#1-string-class%EC%8A%A4%ED%8A%B8%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8A%A4--07_ex05_string_class-0507-krorkosa--ex05_string_class-)
 2. [Protected](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day11_220902#2-protected)
 
@@ -101,7 +110,6 @@
 
 1. [다형성(Polymorphism)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day12_220905#1-%EB%8B%A4%ED%98%95%EC%84%B1polymorphism--05_ex10_inherit_poly-1014-)
 2. [싱글톤패턴(Singleton)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day12_220905#2-%EC%8B%B1%EA%B8%80%ED%86%A4%ED%8C%A8%ED%84%B4singleton--05_singleton-)
-
 3. [추상클래스(abstract)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day12_220905#3-%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4abstract----06_ex01_abstract_class)
 
 ### 13일차
@@ -124,9 +132,43 @@
 
 1. [Collection framework(컬랙션)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day15_220908#1-collection-framework%EC%BB%AC%EB%9E%99%EC%85%98---08_ex01_vector-0103)
 
+### 16일차
 
-</div>
+1. [Generic(제너릭)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day16_220913#1-generic%EC%A0%9C%EB%84%88%EB%A6%AD-08_ex05_generic)
+2. [Stack // Queue(스택 / 큐)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day16_220913#2-stack--queue%EC%8A%A4%ED%83%9D--%ED%81%90-08_ex06_stack_queue-0607)
+3. [Iterator()](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day16_220913#3-iterator-08_ex09_collection_iterator)
+4. [Set](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day16_220913#4-set-08_ex10_set-1012)
+5. [Map](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day16_220913#5-map-08_ex13_map_interface-1314)
+
+### 17일차
+
+1. [Map(맵 인터페이스)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day17_220914#1-map%EB%A7%B5-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-08_ex15_map_generic-1516)
+2. [Properties](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day17_220914#2-properties-08_ex17_properties)
+3. [LinkedList](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day17_220914#3-linkedlist)
+4. [Wrapper class(래퍼 클래스)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day17_220914#4-wrapper-class%EB%9E%98%ED%8D%BC-%ED%81%B4%EB%9E%98%EC%8A%A4-08_ex08_wrapper)
+5. [Calendar(캘린더)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day17_220914#5-calendar%EC%BA%98%EB%A6%B0%EB%8D%94-07_ex09_calendar)
+
+### 18일차
+
+1. [Calendar Format(캘린더 포맷)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day18_220915#1-calendar-format%EC%BA%98%EB%A6%B0%EB%8D%94-%ED%8F%AC%EB%A7%B7-07_ex10_format_date)
+2. [Decimal Format (소수 포맷)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day18_220915#2-decimal-format-%EC%86%8C%EC%88%98-%ED%8F%AC%EB%A7%B7-07_ex11_format_etc)
+3. [I/O (Input/Output) (입출력)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day18_220915#3-io-inputoutput-%EC%9E%85%EC%B6%9C%EB%A0%A5-09_ex01_stream-0109)
+4. [I/O Buffer (버퍼)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day18_220915#buffer-09_ex04_stream_buffer)
+5. [I/O CMD DIR 구현하기](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day18_220915#file_dir-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
+
+### 19일차
+1. [I/O (Input/Output) (입출력)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day19_220916#1-io-inputoutput-%EC%9E%85%EC%B6%9C%EB%A0%A5-09_ex01_stream-1016)
+2. [I/O Sublist(서브리스트)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day19_220916#sublist-%EC%84%9C%EB%B8%8C%EB%A6%AC%EC%8A%A4%ED%8A%B8)
+3. [I/O 보조스트림](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day19_220916#%EB%B3%B4%EC%A1%B0%EC%8A%A4%ED%8A%B8%EB%A6%BC)
+4. [I/O serialization (직렬화)](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day19_220916#%EC%A7%81%EB%A0%AC%ED%99%94serialization---objectoutputstream-09_ex15_objectdataoutputstream-1516)
+
 </details>
+</div>
+
+</details>
+</div>
+
+
 
 ## 조별과제
 
@@ -145,14 +187,26 @@
 10. [랜덤정수 평균출력](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/10.%20%EB%9E%9C%EB%8D%A4%EC%A0%95%EC%88%98%20%ED%8F%89%EA%B7%A0%EC%B6%9C%EB%A0%A5)
 11. [369박수](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/11.369%EB%B0%95%EC%88%98)
 
-</div>
 </details>
+</div>
 
 <details>
 <summary>2주차</summary>
 
-곧 생겨용~
+
+<details>
+<summary>01. 클래스</summary>
+
+</details>
+</div>
+
+<details>
+<summary>02. 상속</summary>
+
 
 </div>
 </details>
+
+</details>
+</div>
 

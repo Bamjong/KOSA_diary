@@ -38,7 +38,7 @@
 ### 4일차
 1. [Scanner 입출력 클래스](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day04_220824#1-scanner-%EC%9E%85%EC%B6%9C%EB%A0%A5-%ED%81%B4%EB%9E%98%EC%8A%A4-01_ex08_printf_format)
 2. [case문, for문](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day04_220824#2-case%EB%AC%B8-for%EB%AC%B801_ex10_statement)
-3. [while문]https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day04_220824#3-while%EB%AC%B801_ex11_statement)
+3. [while문](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day04_220824#3-while%EB%AC%B801_ex11_statement)
 4. [Class 개념](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day04_220824#4-class-%EA%B0%9C%EB%85%9002_ex01_main)
 5. [private 캡슐화 getter/setter](https://github.com/Bamjong/KOSA_diary/tree/main/TIL(Today%20I%20Learned)/Java/Day04_220824#5-private-%EC%BA%A1%EC%8A%90%ED%99%94-getter--setter-03_emp)
 

@@ -208,7 +208,7 @@
 <details>
 <summary>01. 클래스</summary>
 
-1. [LGTV출력](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/1%EC%A3%BC%EC%B0%A8/01.%20%EC%84%B1%EC%A0%81%ED%8C%90%EB%8F%85%EA%B8%B0)
+1. [LGTV출력](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/2%EC%A3%BC%EC%B0%A8/01.%20%ED%81%B4%EB%9E%98%EC%8A%A4/01.%20LGTV%EC%B6%9C%EB%A0%A5)
 2. [Grade 클래스](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/2%EC%A3%BC%EC%B0%A8/01.%20%ED%81%B4%EB%9E%98%EC%8A%A4/02.%20Grade%20%ED%81%B4%EB%9E%98%EC%8A%A4)
 3. [노래한곡 Song](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/2%EC%A3%BC%EC%B0%A8/01.%20%ED%81%B4%EB%9E%98%EC%8A%A4/03.%20%EB%85%B8%EB%9E%98%ED%95%9C%EA%B3%A1%20Song)
 4. [Rectangle](https://github.com/Bamjong/KOSA_diary/tree/main/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C/2%EC%A3%BC%EC%B0%A8/01.%20%ED%81%B4%EB%9E%98%EC%8A%A4/04.%20Rectangle)

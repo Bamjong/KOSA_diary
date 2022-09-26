@@ -299,6 +299,8 @@ from emp;
 desc emp;
 ```
 
+![image](https://user-images.githubusercontent.com/92353613/192226036-07989420-c0b6-4a91-b57c-29f112f68706.png)
+
 - 타입
 
     java:   class Emp {private int empno, private String ename}
@@ -306,6 +308,8 @@ desc emp;
 
     oracle(컬럼): 숫자, 문자열, 날씨
     varchar2(10) >> 문자열 데이터의 크기
+
+
 
 <br>
 
@@ -344,6 +348,8 @@ from emp;
 
 desc emp;
 ```
+
+
 
 <br>
 

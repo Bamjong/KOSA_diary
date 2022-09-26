@@ -336,11 +336,21 @@ order by deptno;
 
     <br>
 
-9. 사원테이블에서 사원의 급여를 100달러 인상한 결과를 출력하세요.
+[사원테이블에서 사원의 급여를 100달러 인상한 결과를 출력하세요.]
 
 ```sql
 select empno, ename, sal, sal + 100 as "인상급여"
 from emp;
 
 desc emp;
+```
+
+<br>
+
+9. dual 임시 가상테이블
+```sql
+select 100 + 100 from dual;     --200
+select 100 || 100 from dual;    --100100
+select '100' + 100 from dual;   --숫자형 문자(형변환 가능)
+select 'A100' + 100 from dual;  -- 오류
 ```

@@ -215,3 +215,132 @@ select * from salgrade;
 ![image](https://user-images.githubusercontent.com/92353613/192219483-6878196d-848d-4f1e-ae41-a61135f46fc9.png)
 
 
+<br><br><br>
+
+1. 사원테이블에서 모든 데이터를 출력하세요  
+쿼리는 대소문자 구별 x  
+구문 & 테이블 대소문자 구별은 회사마다 다름
+
+```sql
+select * from emp;
+SELECT * FROM emp;
+```
+
+<br>
+
+2. 특정 컬럼 데이터 출력하기
+
+```sql
+select empno, ename, sal
+from emp;  --줄을 바꿔도 세미콜론 전까지 입력이라 괜찮음
+
+select ename
+from emp;
+```
+
+<br>
+
+3. 컬럼명 가명칭(alias) 별칭 부여하기
+
+```sql
+select empno 사번, ename 이름 from emp;
+select empno "사   번", ename "이   름"from emp;
+
+-- SQL 표준 문법 (ANSI 문법) >> 표준 >> oracle or MS-sql or Mysql 에서 사용가능
+select empno as "사   번", ename as "이   름"
+from emp;
+
+-- Oracle에서 문자열 데이터는 ''(싱글쿼테이션) 사용해서 표현
+-- Oracle 문자열데이터 엄격하게 [대소문자] 구문
+/*
+JAVA: 문자 'A' , 문자열 "AAA"
+Oracle: 문자열 'A', 'AA', 'AAA'
+Oracle: A, a >> 다른 문자
+*/
+select empno, ename
+from emp
+where ename='KING';  -- king 이라고 적으면 찾을 수 없음
+```
+
+<br>
+
+4. SQL 출력 순서
+
+    select 절   3번
+    from 절     1번
+    where 절    2번
+
+    <br>
+
+5. Oracle query(질의어) : 언어
+
+    연산자
+    java: + 문자열 (결합연산)
+    java: + 숫자 (산술연산)
+
+    연산자
+    oracle 결합연산자: ||
+    oracle 산술연산자: + (산술)
+
+    Tip) MS-SQL + (결합, 산술)
+    
+    <br>
+
+6. SQL 자동 형변환
+
+```sql
+select '사원의 이름은' || ename || '입니다' as "사원정보"
+from emp;
+
+-- 형변환 작업 (내부적으로 숫자 (문자열) 자동 형변환)
+select empno || ename   -- 숫자 || 문자열 (결합)
+from emp;
+
+desc emp;
+```
+
+- 타입
+
+    java:   class Emp {private int empno, private String ename}
+    oracle: create table Emp(empno number, ename varchar2(20));
+
+    oracle(컬럼): 숫자, 문자열, 날씨
+    varchar2(10) >> 문자열 데이터의 크기
+
+<br>
+
+7. 중복 데이터를 제거 키워드: distinct
+
+    -- 개발실
+    -- 사장님 ..
+    -- 우리 회사에 직종이 몇개나 있나
+    select job from emp;
+    -- 중복 데이터를 제거 키워드: distinct
+
+```sql
+select distinct job from emp;
+
+-- distinct 원리 >> 그룹핑
+select distinct deptno, job
+from emp
+order by deptno;
+```
+
+<br>
+
+8. Oracle연산자
+
+    java 거의 동일  ( + - * / ) 나머지 %
+    Oracle 동일    ( + - * / ) 나머지 연산자는 없음 >> 함수를 통해서 Mod()
+    ename like '%김%'
+
+    <br>
+
+9. 사원테이블에서 사원의 급여를 100달러 인상한 결과를 출력하세요.
+
+```sql
+select empno, ename, sal, sal + 100 as "인상급여"
+from emp;
+
+desc emp;
+```

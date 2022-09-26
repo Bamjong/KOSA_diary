@@ -39,3 +39,17 @@
 ***결론은 데이터 영속적 저장하는 SW 만드는게 중요***
 
 <br><br>
+
+
+### 시각적으로 DB작업
+
+[무료]
+
+- [SQL Developer 22.2.1](https://www.oracle.com/database/sqldeveloper/technologies/download/)
+- [DBeaver](https://dbeaver.io/download/)
+- [heidisql](https://www.heidisql.com/)
+
+[유료]
+
+- [toad](https://toad.co.kr/product)
+- [SQLgate](https://www.sqlgate.com/pricing/productLicense) -한국

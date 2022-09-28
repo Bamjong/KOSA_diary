@@ -259,7 +259,7 @@ select sum(sal), avg(sal), max(sal), min(sal), count(sal) from emp;
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled.png)
+![Untitled](./pictures/Untitled.png)
 
 ## group by절 이용하기
 

@@ -259,7 +259,7 @@ select sum(sal), avg(sal), max(sal), min(sal), count(sal) from emp;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled.png)
+![Untitled](/Day27_220928/pictures/Untitled.png)
 
 ## group by절 이용하기
 
@@ -277,7 +277,7 @@ group by job;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%201.png)
+![Untitled](/Day27_220928/pictures/Untitled%201.png)
 
 ### [문제]
 
@@ -291,7 +291,7 @@ group by deptno, job;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%202.png)
+![Untitled](/Day27_220928/pictures/Untitled%202.png)
 
 - 위와같이 그룹을 두개 이상도 지어줄 수 있다.
 
@@ -322,7 +322,7 @@ having  avg(sal) >=3000;-- group by 조건절
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%203.png)
+![Untitled](/Day27_220928/pictures/Untitled%203.png)
 
 만약 위와같은 상황에서
 ’직종별 평균급여가 3000달러 이상’ 으로 자르려면 어떻게 해야할까?
@@ -367,7 +367,7 @@ order by samsal asc;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%204.png)
+![Untitled](/Day27_220928/pictures/Untitled%204.png)
 
 ### [문제 2]
 
@@ -382,7 +382,7 @@ having count(*) > 4;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%205.png)
+![Untitled](/Day27_220928/pictures/Untitled%205.png)
 
 ### TIP)
 
@@ -407,7 +407,7 @@ order by sum(sal) desc;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%206.png)
+![Untitled](/Day27_220928/pictures/Untitled%206.png)
 
 # 3. JOIN (조인)
 
@@ -469,7 +469,7 @@ on e.deptno = d.deptno;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%207.png)
+![Untitled](/Day27_220928/pictures/Untitled%207.png)
 
 ### [문제 2]
 
@@ -487,7 +487,7 @@ select * from employees where department_id is null;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%208.png)
+![Untitled](/Day27_220928/pictures/Untitled%208.png)
 
 원래는 107이지만 출력엔 106명이다…
 이유는 department_id중 null값이 있기 때문에 제외하고 출력이 되었기 때문이다.
@@ -504,14 +504,14 @@ ex) 위에 [[문제 2]](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874
 - 의미만 존재 >> 등가조인의 문법을 그대로 사용
 - 1:1매핑 on emp.deptno = dept.deptno
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%209.png)
+![Untitled](/Day27_220928/pictures/Untitled%209.png)
 
 [salgrade 테이블 값]
 
 이곳에서 최소값 최댓값이 주어져있고
 값에 따라 grade가 산정이 되어있다.
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2010.png)
+![Untitled](./pictures/Untitled%2010.png)
 
 [emp 테이블 값]
 
@@ -525,7 +525,7 @@ from emp e join salgrade s
 on e.sal between s.losal and s.hisal;
 ```
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2011.png)
+![Untitled](./pictures/Untitled%2011.png)
 
 - 이처럼 비교할 컬럼이 없어도 조인이 가능하다.
 
@@ -583,7 +583,7 @@ on e.mgr = m.empno; -- 13명
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2012.png)
+![Untitled](./pictures/Untitled%2012.png)
 
 # 문제풀기
 
@@ -598,7 +598,7 @@ FROM EMP E  join DEPT D on E.DEPTNO=D.DEPTNO;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2013.png)
+![Untitled](./pictures/Untitled%2013.png)
 
 ### [문제 2]
 
@@ -612,7 +612,7 @@ WHERE  D.LOC='DALLAS';
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2014.png)
+![Untitled](./pictures/Untitled%2014.png)
 
 ### [문제 3]
 
@@ -626,7 +626,7 @@ WHERE  E.ENAME LIKE '%A%';
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2015.png)
+![Untitled](./pictures/Untitled%2015.png)
 
 ### [문제 4]
 
@@ -640,7 +640,7 @@ WHERE E.SAL>=3000;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2016.png)
+![Untitled](./pictures/Untitled%2016.png)
 
 ### [문제 5]
 
@@ -654,7 +654,7 @@ WHERE E.JOB='SALESMAN';
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2017.png)
+![Untitled](./pictures/Untitled%2017.png)
 
 ### [문제 6]
 
@@ -676,7 +676,7 @@ WHERE E.Comm is not null;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2018.png)
+![Untitled](./pictures/Untitled%2018.png)
 
 ### [문제 7]
 
@@ -693,7 +693,7 @@ SELECT * FROM SALGRADE;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2019.png)
+![Untitled](./pictures/Untitled%2019.png)
 
 ### [문제 8]
 
@@ -711,7 +711,7 @@ ORDER BY E.DEPTNO ASC,  E.SAL DESC;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2020.png)
+![Untitled](./pictures/Untitled%2020.png)
 
 ### [문제 9]
 
@@ -728,7 +728,7 @@ on e.MGR = m.EMPNO;
 
 [출력]
 
-![Untitled](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874d47e19/Untitled%2021.png)
+![Untitled](./pictures/Untitled%2021.png)
 
 # 기타
 

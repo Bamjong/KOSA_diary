@@ -277,7 +277,7 @@ group by job;
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled%201.png)
+![Untitled](./pictures/Untitled%201.png)
 
 ### [문제]
 
@@ -291,7 +291,7 @@ group by deptno, job;
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled%202.png)
+![Untitled](./pictures/Untitled%202.png)
 
 - 위와같이 그룹을 두개 이상도 지어줄 수 있다.
 
@@ -322,7 +322,7 @@ having  avg(sal) >=3000;-- group by 조건절
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled%203.png)
+![Untitled](./pictures/Untitled%203.png)
 
 만약 위와같은 상황에서
 ’직종별 평균급여가 3000달러 이상’ 으로 자르려면 어떻게 해야할까?
@@ -367,7 +367,7 @@ order by samsal asc;
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled%204.png)
+![Untitled](./pictures/Untitled%204.png)
 
 ### [문제 2]
 
@@ -382,7 +382,7 @@ having count(*) > 4;
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled%205.png)
+![Untitled](./pictures/Untitled%205.png)
 
 ### TIP)
 
@@ -407,7 +407,7 @@ order by sum(sal) desc;
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled%206.png)
+![Untitled](./pictures/Untitled%206.png)
 
 # 3. JOIN (조인)
 
@@ -469,7 +469,7 @@ on e.deptno = d.deptno;
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled%207.png)
+![Untitled](./pictures/Untitled%207.png)
 
 ### [문제 2]
 
@@ -487,7 +487,7 @@ select * from employees where department_id is null;
 
 [출력]
 
-![Untitled](/Day27_220928/pictures/Untitled%208.png)
+![Untitled](./pictures/Untitled%208.png)
 
 원래는 107이지만 출력엔 106명이다…
 이유는 department_id중 null값이 있기 때문에 제외하고 출력이 되었기 때문이다.

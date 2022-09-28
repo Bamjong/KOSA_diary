@@ -504,7 +504,7 @@ ex) 위에 [[문제 2]](%F0%9F%93%9A%20Day27_220928%20d10ed3dd25a74236a65e44d874
 - 의미만 존재 >> 등가조인의 문법을 그대로 사용
 - 1:1매핑 on emp.deptno = dept.deptno
 
-![Untitled](/Day27_220928/pictures/Untitled%209.png)
+![Untitled](./pictures//Untitled%209.png)
 
 [salgrade 테이블 값]
 

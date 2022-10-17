@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내장 객체(제공받아요)</title>
+
+    <script>
+        /*
+        javascript 다양한 내장 객체 제공: new를 통해서 ... 이미 생성된 객체 (그냥 ㅅ ㅏ용)
+        ex) Date(), Array()
+        */
+       let today = new Date();
+       console.log(today);
+       console.log(today.getFullYear());
+       console.log(today.getMonth()+1);
+       console.log(today.getDate());
+       console.log(today.getHours());
+       console.log(today.getMilliseconds());
+
+       //JAVA : Math.Random() >> static 함수
+       console.log(Math.random()); //0<= 범위 <1
+       console.log(parseInt(Math.random()*45)+1); //0<= 범위 <1
+       //javascript 로또 프로그램
+       console.log(Math.round(Math.PI)); //반올림
+       console.log(Math.max(3,7,36,7,2,88));
+
+       //POINT 문자열 관련함수
+       let str = "ABCDEF";
+
+       //document.write()
+       with(document){  //원래같은경우 document.write 해야하는데 with를 적어주어 안적어줘도됨
+        write(str + "<br>");
+        write(str.length + "<br>"); //6
+        write(str.charAt(2)+ "<br>");  //C
+        write(str.indexOf("D") + "<br>"); //3
+        write(str.concat("홍길동") + "<br>"); //ABCDEF홍길동
+
+        //slice(start,end)
+        //substring(start,end)
+        //substr(start,length)
+
+        let str2 = str.replace("E","zzzzzzzzz");
+        write(str2 + "<br>");
+        //str = "ABCDEF"
+        write(str.substring(2,4) + "<br>"); //cd
+        write(str.substring(1,1) + "<br>"); //
+        write(str.substring(1,2) + "<br>"); //B
+        write(str.substring(1) + "<br><br>"); //BCDEF
+        
+        let strarr = "A B C D";
+        let arr = strarr.split(" ");
+        write(arr); //toString() 재정의 -> javascript Array가
+
+        //TODAY's POINT
+        //JAVA: 개선된 for문
+        //for(String s : arr) {s값 출력}
+
+        //MS(c#), javascript >> in
+        //javascript : for(let s in arr){}
+        write("<br>");
+        for(let index in arr){ //약속 개선된 for문 변수명 : index
+            // write(index + " "); //0 1 2 3
+            write(arr[index] + " "); //A B C D
+        }
+       }
+       
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

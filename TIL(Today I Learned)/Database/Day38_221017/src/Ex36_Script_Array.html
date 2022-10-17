@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+        //javascript 동적배열 >> JAVA 비교 >> JavaScript Collection
+
+        let array = ['포도', '사과'];
+        console.log(array.toString()); //toString() 재정의 .. 출력
+        console.log(array + "-default toString() 생략");
+
+        for(let i = 0; i < array.length; i++){
+            console.log(array[i]);
+        }
+
+        for(let index in array){
+            console.log(array[index]);
+        }
+
+        for(let value of array){
+            console.log(value);
+        }
+
+        //동적
+        array[2] = "바나나";
+        console.log(array.toString() + "/" + array.length);
+
+        //['포도','사과','바나나']
+        //권장 x (가능은 함)
+        array[10] = "애플망고"; //동적 데이터 추가
+        console.log(array.toString() + "/" + array.length);
+        console.log(array[9] + + ">> array[9] 접근");
+
+        array[9]="배"; //타입 설정
+
+        let array2 = ["one","two","three"];
+        //권장하지 않아요. 근데 가능은 해요.
+        array2.length=2; // 개수를 2개
+        console.log(array2);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

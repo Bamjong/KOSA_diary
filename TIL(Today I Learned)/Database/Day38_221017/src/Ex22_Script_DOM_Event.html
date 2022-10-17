@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.onload = () => {
+            let btnobj = document.getElementById("btngetdata");
+            //동적으로 이벤트 처리
+            //bad >> <input type = "button" onclick="" ..
+            btnobj.onclick = () => {
+                let txtmsg = document.getElementById("txtmessage");
+                let str = "";
+                str += "ID: " + txtmsg.getAttribute("id"); //txtmessage
+                str += "value: " + txtmsg.getAttribute("value");
+                console.log(str);
+            }
+
+            document.getElementById("btncreate").onclick = () => {
+
+                let txtname = document.createElement("input");
+                txtname.setAttribute("type","text");
+                txtname.setAttribute("id","txtbox");
+                txtname.setAttribute("value","홍길동");
+
+                document.body.appendChild(txtname);
+            }
+        }
+
+
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="txtmessage" value="hello">
+    <input type="button" id="btngetdata" value="getinfo">
+    <hr>
+    <input type="button" value="동적생성" id="btncreate">
+</body>
+</html>

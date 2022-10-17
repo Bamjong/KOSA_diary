@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.onload = () => {
+            let pele = document.createElement("p");
+            let hele = document.createElement("p");
+            let h3ele = document.createElement("p");
+
+            let textnode = document.createTextNode("hello world");
+            let divele = document.createElement("div");
+            let textnode2 = document.createTextNode("HI HI HI");
+
+            hele.setAttribute("title","수평선");
+
+            h3ele.appendChild(textnode);
+
+            divele.appendChild(textnode2);
+
+
+            document.body.appendChild(pele).appendChild(divele);
+            //<body><p><div>HI HI HI</div></p></body>
+
+            document.body.appendChild(hele);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

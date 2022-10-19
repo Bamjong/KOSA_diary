@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <!— JavaScript Bundle with Popper —> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- <!— CSS only —>    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    
+</head>
+<body>
+    <input type="date" value="" max="2022-10-19" id="client_date"><br><br>
+
+<table class="table caption-primary">
+  <caption id="movie_date"></caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">영화제목</th>
+      <th scope="col">개봉날짜</th>
+      <th scope="col">해당 매출액</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+    <tr>
+        <th scope="row">1</th>
+        <td id="1_movieNm"></td>
+        <td id="1_openDt"></td>
+        <td id="1_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td id="2_movieNm"></td>
+        <td id="2_openDt"></td>
+        <td id="2_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td id="3_movieNm"></td>
+        <td id="3_openDt"></td>
+        <td id="3_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td id="4_movieNm"></td>
+        <td id="4_openDt"></td>
+        <td id="4_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">5</th>
+        <td id="5_movieNm"></td>
+        <td id="5_openDt"></td>
+        <td id="5_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">6</th>
+        <td id="6_movieNm"></td>
+        <td id="6_openDt"></td>
+        <td id="6_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td id="7_movieNm"></td>
+        <td id="7_openDt"></td>
+        <td id="7_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td id="8_movieNm"></td>
+        <td id="8_openDt"></td>
+        <td id="8_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">9</th>
+        <td id="9_movieNm"></td>
+        <td id="9_openDt"></td>
+        <td id="9_salesAmt"></td>
+    </tr>
+    <tr>
+        <th scope="row">10</th>
+        <td id="10_movieNm"></td>
+        <td id="10_openDt"></td>
+        <td id="10_salesAmt"></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+
+
+
+
+
+<script>
+
+
+    document.getElementById("client_date").addEventListener("change", () =>{
+
+    
+
+        //날짜 구하기
+        let client_date = document.getElementById("client_date").value
+        let client_date_year = client_date.substring(0,4);
+        let client_date_month = client_date.substring(5,7);
+        let client_date_day = client_date.substring(8);
+
+        client_date = client_date_year+client_date_month+client_date_day;
+
+
+
+
+
+        //영화 정보 가져오기
+        function readTextFile(file, callback) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.overrideMimeType("http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt="+client_date);
+            rawFile.open("GET", file, true);
+            rawFile.onreadystatechange = function() {
+                if (rawFile.readyState === 4 && rawFile.status == "200") {
+                    callback(rawFile.responseText);
+                }
+            }
+            rawFile.send(null);
+        }
+
+        //출력하기
+        readTextFile("http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=f5eef3421c602c6cb7ea224104795888&targetDt="+client_date, function(text){
+            var data = JSON.parse(text);
+            console.log(data);
+            console.log(data.boxOfficeResult.dailyBoxOfficeList[0].movieNm);
+            console.log(data.boxOfficeResult.dailyBoxOfficeList.length);
+
+            
+
+            for(let index=0; index<10; index++){
+            
+            //매출액 반점 넣기
+            let money = data.boxOfficeResult.dailyBoxOfficeList[index].salesAmt;
+            let result = money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+
+            // 영화제목 개봉날짜 매출액 기입
+            document.getElementById(index+1+"_movieNm").innerHTML = data.boxOfficeResult.dailyBoxOfficeList[index].movieNm;
+            document.getElementById(index+1+"_openDt").innerHTML = data.boxOfficeResult.dailyBoxOfficeList[index].openDt;
+            document.getElementById(index+1+"_salesAmt").innerHTML = result;
+            }
+            //document.getElementById("1_movieNm").innerHTML = data.boxOfficeResult.dailyBoxOfficeList[4].movieNm;
+            
+            document.getElementById("movie_date").innerHTML = data.boxOfficeResult.showRange;
+        });
+
+    });
+
+    
+
+    
+
+    
+
+
+</script>
+</html>

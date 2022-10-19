@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        let data = { "stationInfo": { "list_total_count": "2943", "RESULT": { "CODE": "INFO-000", "MESSAGE": "정상 처리되었습니다." }, "row": [{ "STA_LOC": "마포구", "RENT_ID": "ST-10", "RENT_NO": "00108", "RENT_NM": "서교동 사거리", "RENT_ID_NM": "108. 서교동 사거리", "HOLD_NUM": "10", "STA_ADD1": "서울특별시 마포구 양화로 93", "STA_ADD2": "427", "STA_LAT": "37.55274582", "STA_LONG": "126.91861725", "START_INDEX": 0, "END_INDEX": 0, "RNUM": "1" }, { "STA_LOC": "광진구", "RENT_ID": "ST-100", "RENT_NO": "00503", "RENT_NM": "더샵스타시티 C동 앞", "RENT_ID_NM": "503. 더샵스타시티 C동 앞", "HOLD_NUM": "15", "STA_ADD1": "서울특별시 광진구 아차산로 262", "STA_ADD2": "더샵스타시티 C동 앞", "STA_LAT": "37.53666687", "STA_LONG": "127.07359314", "START_INDEX": 0, "END_INDEX": 0, "RNUM": "2" }, { "STA_LOC": "양천구", "RENT_ID": "ST-1000", "RENT_NO": "00729", "RENT_NM": "서부식자재마트 건너편", "RENT_ID_NM": "729. 서부식자재마트 건너편", "HOLD_NUM": "10", "STA_ADD1": "서울특별시 양천구 신정동 236 ", "STA_ADD2": "서부식자재마트 건너편", "STA_LAT": "37.51037979", "STA_LONG": "126.86679840", "START_INDEX": 0, "END_INDEX": 0, "RNUM": "3" }, { "STA_LOC": "양천구", "RENT_ID": "ST-1002", "RENT_NO": "00731", "RENT_NM": "서울시 도로환경관리센터", "RENT_ID_NM": "731. 서울시 도로환경관리센터", "HOLD_NUM": "10", "STA_ADD1": "서울특별시 양천구 목동동로 316-6", "STA_ADD2": "서울시 도로환경관리센터", "STA_LAT": "37.52989960", "STA_LONG": "126.87654114", "START_INDEX": 0, "END_INDEX": 0, "RNUM": "4" }, { "STA_LOC": "양천구", "RENT_ID": "ST-1003", "RENT_NO": "00732", "RENT_NM": "신월중학교", "RENT_ID_NM": "732. 신월중학교", "HOLD_NUM": "10", "STA_ADD1": "서울특별시 양천구 화곡로 59", "STA_ADD2": "신월동 이마트", "STA_LAT": "37.53955078", "STA_LONG": "126.82830048", "START_INDEX": 0, "END_INDEX": 0, "RNUM": "5" }] } };
+
+        window.onload = function () {
+
+            let flag = 0;
+            let abc = 0;
+
+            const addr_name = new Set;
+            let addr = data.stationInfo.row;
+            addr_name.add("선택하세요");
+            
+            console.log(addr);
+
+            for (let index in addr) {
+                addr_name.add(addr[index].STA_LOC);
+            }
+
+            for (let index of addr_name) {
+                let option = document.createElement("option");
+                option.setAttribute('value', index);
+                option.innerText = index;
+
+                document.getElementById("sel").appendChild(option);
+            }
+
+            document.getElementById("sel").addEventListener("change", function () {
+                let cityList = document.getElementById("sel");
+                let city = cityList.options[cityList.selectedIndex].value;
+
+                console.log(city);
+
+                let table = document.createElement("table");
+                let thead = document.createElement('thead');
+                let tbody = document.createElement('tbody');
+
+                table.appendChild(thead);
+                table.appendChild(tbody);
+
+                var row1 = document.createElement('tr');
+                var head1 = document.createElement('th');
+                head1.innerHTML = "지역구";
+                var head2 = document.createElement('th');
+                head2.innerHTML = "대여소명";
+                var head3 = document.createElement('th');
+                head3.innerHTML = "주소";
+                var head4 = document.createElement('th');
+                head4.innerHTML = "거치대수";
+
+                row1.appendChild(head1);
+                row1.appendChild(head2);
+                row1.appendChild(head3);
+                row1.appendChild(head4);
+                thead.appendChild(row1);
+
+
+                for (let index in addr) {
+                    var row2 = document.createElement('tr');
+
+                    if (addr[index].SIGNGU_NM == city) {
+                        var data1 = document.createElement('td');
+                        data1.innerHTML = addr[index].FACLT_NM;
+                        var data2 = document.createElement('td');
+                        data2.innerHTML = addr[index].REFINE_ROADNM_ADDR;
+                        var data3 = document.createElement('td');
+                        data3.innerHTML = addr[index].CUSTODY_BOX_KIND_CD_INFO;
+                        var data4 = document.createElement('td');
+                        data4.innerHTML = addr[index].INSTL_DE
+
+                        row2.appendChild(data1);
+                        row2.appendChild(data2);
+                        row2.appendChild(data3);
+                        row2.appendChild(data4);
+                        tbody.appendChild(row2);
+                    }
+                    document.body.appendChild(table);
+
+                }
+                flag += 1;
+
+                tableArray = document.getElementsByTagName('table')
+                //    console.log(tableArray);
+                //    console.log(flag);
+
+                if (flag > 1) {
+                    while (tableArray.length == flag) {
+                        tableArray[abc].innerHTML = "";
+                        abc++;
+                        console.log(abc);
+                        break;
+                    }
+
+                }
+
+
+            });
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <select class="form-control" id="sel" name="sel">
+</body>
+
+</html>

@@ -1,83 +1,66 @@
-# 📚 Day34_221011
+# 📚 Day41_221020
 
 Author: 고범종
-Created Time: 2022년 10월 11일 오전 10:13
+Category: 2021
+Created Time: 2022년 10월 20일 오전 8:55
+Main Category: Log
 Status: 🖨 Published
-Tags: 데이터 모델링
-Updated Time: 2022년 10월 12일 오전 9:25
+Tags: JSP, JavaScript, Servlet
+Updated Time: 2022년 10월 21일 오전 11:21
 
-# 1. 데이터모델링
+# 1. **Servlet & JSP**
 
-- 속성
+Servlet은뭐고 JSP는 무엇일까?
 
-속성 정의시 고려사항
+<aside>
+💡 jsp는 html안에 자바 코드가 포함된 것으로 서버사이드 스크립트를 말한다. jsp는 실행시에는 Java Servlet 으로 변환된 후 실행되므로 서블릿과 거의 유사하다고 볼 수 있다. 하지만, 서블릿과는 달리 HTML 표준에 따라 작성되므로 웹페이지 작성이 편리해졌다. 클라이언트에서 서비스가 요청되면, JSP의 실행을 요구하고, JSP는 웹어플리케이션 서버(Tomcat)의 서블릿 컨테이너에서 서블릿 원시코드로 변환된다, 그후에 서블릿 원시코드는 바로 컴파일된 후 실행되어 결과를 HTML 형태로 클라이언트에 돌려준다. 이렇게 서블릿과 달리 JSP는 코드를 변경할 때마다 WAS에서 자동으로 빌드하고 클라이언트에 화면을 동적으로 보여주기 때문에 개발이 많이 편리해 졌다.
 
-파생된 값은 실제 성능을 위해서 사용되기도 하지만, 이런 값의 중복은 나중에 심각한 무결성 문제를 발생할 수 있으므로 조심해서 사용
+</aside>
 
-- 도메인 지정
+### **서블릿(Servlet)의 특징**
 
-엔티티 내 속성에 대한 데이터 타입과 크기, 제약 사항 지정
+- 동적 웹어플리케이션 일부
+- .java 확장자
+- Client 요청에 동적으로 작동하고 응답은 html을 이용
+- java thread를 이용하여 동작하는 Servlet의 가장 큰 강점이다.
+- MVC에서 Controller
 
-- 식별자
-    
-    정의
-    식별자란 하나의 엔티티 내에서 각각의 인스턴스를 Unique하게 구분해 낼 수 있는 속성 또는 속성 그룹을 말함
-    
-    - 후보식별자: 하나의 엔티티 내에서 식별자로 사용할 수 있는것
-    - 주 식별자:
-    
-    - 내부식별자: 자신의 엔티티 내에서 스스로 생성되어 존재하는 식별자
-    - 외부식별자: 다른 엔티티로부터 관계에 의해 주 식별자 속성을 상속받아 자신의 속성에 포함되는 식별자 (FK를 의미)
-        
-        
-    - 단일식별자: 주식별자의 구성이 한 가지 속성으로 이루어진 경우
-    - 복합식별자: 두 개 이상의 속성으로 구성된 경우
-    
-    (분포도가 좋은 속성은 우선순위가 높다.)
-    
+### **JSP의 특징**
 
-- **대리식별자**: 주 식별자의 속성이 복합식별자일 경우 여러 개의 속성을 묶어 하나의 속성으로 만들어 주 식별자로 활용하는 경우
+- 동적 웹어플리케이션 일부
+- .jsp 확장자
+- Client 요청에 동적으로 작동하고 응답은 html을 이용
+- jsp파일은 .java 파일로 변환되고 컴파일을 거쳐서 .class 파일로 변환되어 실행
+(index.jsp 파일이 index_jsp.java로 변환되고 index_jsp.class 로 변환)
+- MVC에서 View
 
-- 관계 정의
-    
-     
-    
-    ![https://user-images.githubusercontent.com/92353613/194983247-912391dd-29f5-4c6a-bb0f-adcfd4d00462.png](https://user-images.githubusercontent.com/92353613/194983247-912391dd-29f5-4c6a-bb0f-adcfd4d00462.png)
-    
-    - 슈퍼타입 서브타입관계
-        
-        공통 속성을 가지는 슈퍼타입과, 고옽ㅇ 부분을 제외하고 두 개 이상의 엔티티 간의 속성에 차이가 있을 때 별도의 서브타입으로 존재
-        
-    - 배타적 관계: 슈퍼타입의 엔티티가 반드시 하나의 서브타입에는 속하는 관계
-    - 포함 관계: 슈퍼타입의 엔티티가 두 개 이상의 서브타입에 포함될 수 있는 관계
-    
-    ---
-    
-    ---
-    
-    # 2. CSS
-    
-    ## 1. ****어트리뷰트 셀렉터 (Attribute Selector)****
-    
-    ## 2. Position 속성
-    
-    - static: position 속성을 부여하지 않았을 때 가지는 디폴드 값
-    - relative: 현재 위치에서 상대적인 offset 속성을 줄 수 있다.
-    - absolute: 부모 중에 static이 아닌 요소의 위치를 기준으로 상대적인 offset 속성을 줄 수 있다. 하지만 현재 위치가 변하는 것은 아니다.
-    - fixed: 브라우저에 대해서 위치를 잡는다. 스크롤에 영향을 받지 않고 고정된 위치를 가짐.
-    
-    ### static
-    
-    [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile29.uf.tistory.com%2Fimage%2F23336C4F593969D52CA96C](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile29.uf.tistory.com%2Fimage%2F23336C4F593969D52CA96C)
-    
-    ### relative
-    
-    [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F2666384B59396B0D316F71](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F2666384B59396B0D316F71)
-    
-    ### absolute
-    
-    [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F2149714B59396EF31D07FB](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F2149714B59396EF31D07FB)
-    
-    ### fixed
-    
-    [https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile9.uf.tistory.com%2Fimage%2F2721875059397C4A30130D](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile9.uf.tistory.com%2Fimage%2F2721875059397C4A30130D)
+**※ 동적 웹 어플리케이션 일부**
+
+- 일반적으로 HTML 문서는 정적이다. 연산을 요청 했을 경우 불가능하다, JSP와 Servlet은 동적이기에 가능하다.
+
+# 2. MVC 모델
+
+- MVC 패턴이란 애플리케이션을 크게 Model, View, Controller의 세 영역으로 구분하여 영역 간의 결합도를 소화한 패턴
+- 주로 웹 애플리케이션에서 사용되며, 일반 애플리케이션에서도 사용됨
+
+![https://camo.githubusercontent.com/d97563a67146e3bfb0ea31af66cd42c880c46a089c0650c15e5a3fbfaab8f9fe/68747470733a2f2f647468756d622d7068696e662e707374617469632e6e65742f3f7372633d253232687474702533412532462532466d312e6461756d63646e2e6e65742532466366696c653233342532465234303078302532463133373035393439353034433537454230453142373225323226747970653d636166655f7761373430](https://camo.githubusercontent.com/d97563a67146e3bfb0ea31af66cd42c880c46a089c0650c15e5a3fbfaab8f9fe/68747470733a2f2f647468756d622d7068696e662e707374617469632e6e65742f3f7372633d253232687474702533412532462532466d312e6461756d63646e2e6e65742532466366696c653233342532465234303078302532463133373035393439353034433537454230453142373225323226747970653d636166655f7761373430)
+
+- MVC 패턴의 가장 중요한 장점 중 하나는 비즈니스 로직과 프리젠테이션 로직이 분리되었다는 것
+- 디자이너와 개발자들의 영역이 분리됨으로써 서로 각자의 영역에 더 집중할 수 있다는 장점
+- Model2가 Model1에 비해 개발 초기의 부하가 비교적 높고, 아키텍처에 대한 수준 높은 이해를 요구하지만 재사용성이 높고 확장이 Model1에 비해 용이함
+- 무엇보다 Model2는 그 구조적 특징으로 인해 자연스럽게 MVC 각 영역의 역할이 구분되도록 해줌
+
+### **< Model 영역 >**
+
+- 애플리케이션에 비즈니스 로직과 사용되는 데이터를 다루는 영역
+- 일반적으로 비즈니스 데이터는 DBMS에 의해 관리되고, 그 데이터를 다루는 연산은 SQL문을 통해 구현
+
+### **< View 영역 >**
+
+- 최종 사용자에게 보여줄 프리젠테이션 로직을 담당하는 영역
+- 일반적으로 자바 웹 애플리케이션에서는 JSP를 통해서 구현
+
+### **< Controller 영역 >**
+
+- 컨트롤러는 흐름을 관리하는 역할을 하며, 모델과 뷰 영역간의 조정 역할
+- 사용자의 요청을 받아 이를 수행하기 위한 비즈니스 로직을 선택하고 호출하며, 수행한 비즈니스 로직의 결과를 뷰를 통해 보여줌

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>WebJSP</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+     <description>개발자 마음....</description>
+     <param-name>email</param-name>
+     <param-value>webmaster@kosa.or.kr</param-value>
+  </context-param>
+  <context-param>
+  		<description>기본파일 업로드 경로</description>
+  		<param-name>filepath</param-name>
+  		<param-value>c:\\Web\\Download</param-value>
+  </context-param>
+  <!-- 
+  	WebApp(context) 전체 페이지에 적용되는 Error 페이지
+  	
+  	1. 상태코드 (500 서버코드, 404 요청페이지 없어요, 403 접근권한 )
+  	특정 페이지를 만들어서 상태코드에 맞게 페이지를 서비스
+  	
+  	
+  	2. 예외별로 (세분화) : NullPoint ..처리 페이지, IndexOutofBound 처리 페이지 ..
+  	개발시에는 ... 안돼용
+  	개발자는 예외를 확인
+  	
+  	배포시 작업....
+   -->
+   <error-page>
+   		<error-code>500</error-code>
+   		<location>/error/Error500.jsp</location>
+   </error-page>
+   <error-page>
+   		<error-code>404</error-code>
+   		<location>/error/Error404.jsp</location>
+   </error-page>
+</web-app>

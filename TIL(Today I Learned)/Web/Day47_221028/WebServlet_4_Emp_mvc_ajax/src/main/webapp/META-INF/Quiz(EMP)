@@ -1,0 +1,4 @@
+ajax: Ex06_Emp_Search통해서 사번을 제공한 후 비동기 UI디자인된 페이지를 받아서 화면에 출력
+
+1. EmpSearch.jsp (비동기 요청 보내요) -> Servlet -> forward(ui.jsp) -> 비동기 responseText
+-> EmpSearch 가공

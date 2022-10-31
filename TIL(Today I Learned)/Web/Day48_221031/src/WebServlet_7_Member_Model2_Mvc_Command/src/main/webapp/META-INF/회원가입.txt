@@ -1,0 +1,62 @@
+1. 회원테이블 생성하기
+   create table mvcregister(
+       id number constraint pk_mvcregister_id primary key,
+       pwd varchar2(20) not null,
+       email varchar2(50) not null
+   );
+   
+   desc mvcregister;
+
+>> 웹 프로젝트 생성
+>> 연결 테이스 (DBCP) >> ojdbc6.jar, context.xml, 연결.jsp >> Test End
+-------------------------------------------------------------------------------------------------------------------------------------
+< Model2 MVC 패턴 작업 >
+
+Model       :    1. DTO 생성 > Db 테이블과 같은 구조 클래스 생성 > getter, setter 구현
+            	 2. DB 연결(POOL) > DAO > CRUD > 전체조회, 조건조회, 삽입, 삭제, 수정 + 알파(LIKE)
+               Servic단..추후
+
+View        :    1. html or jsp > 구분점은? : UI 데이터 출력 유무 > Boot > include > 모든페이지 > JSP
+            	 2. EL & JSTL > server에서 데이터 담아서 (request) > forward > 그 request 객체 ...
+             ex) ${requestScope.list) or ${sessionScope.id} >> 출력(JSTL)
+            	 3. JSP 보안적 처리 > WEB-INF > view > member or admin or board > jsp 관리
+            	 4. 비동기처리(ajax) > xmlHttpRequest
+
+
+
+Controller   :   1. 요청마다 Controller 생성하기 (servlet 생성)
+              1-1. write > /write > ServletWrite
+              1-2. list > /list > ServletList
+            	 2. 요청마다 Controller 생성하지 말고 1개 (servlet 생성)
+              2-1. FrontController >> servet 1개 (모든요청판단) > 판단근거
+                  1)판단의 근거
+                   - command 방식 : 글쓰기(servlet.do?cmd=write), 글목록보기(servlet.do?cmd=list)
+                                  if{cmd.equals("write")(글쓰기 작업 수행)}
+                   - url 방식     : 글쓰기(wrtie.do?id=hihi&pwd=1004), 글목록보기(list.do) >> url 주소로 요청을 판단
+                                  주의) url패턴 >> * do
+                                  
+-------------------------------------------------------------------------------------------------------------------------------------
+
+--Package 구성 (관리가 편하다 ....)
+--도메인 구성
+
+기본적인 구조
+kr.or.kosa.dto
+kr.or.kosa.dao
+kr.or.kosa.controller
+kr.or.kosa.utils
+
+업무별 Domain 별 구성을 한다면
+kr.or.member.dto
+kr.or.member.dao
+kr.or.member.controller
+
+kr.or.kosa.admin.dto
+kr.or.kosa.admin.dao
+kr.or.kosa.admin.controller
+
+kr.or.kosa.board.dto
+kr.or.kosa.board.dao
+kr.or.kosa.board.controller
+
+                               

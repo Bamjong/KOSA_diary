@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		/*
+		http://api.flickr.com/services/feeds/photos_public.gne?tags=raccoon&tagmode=any&format=json&jsoncallback=?
+		getJSON 비동기 요청 보내세요
+		
+		요청 주소: http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?
+				
+		JSON객체 가공
+		tags=raccoon&tagmode=any&format=json
+		tags=[input 태그에서 값을 가지고 오세요]&tagmode=any&format=json
+		*/
+
+		$(function(){
+				$('#btn').click(function() {
+					$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+ $('#search').val() +"&tagmode=any&format=json&jsoncallback=?",function(data){
+						// console.log(data);
+						// console.log(data.items);
+						// console.log(data.items[0].media.m);
+						console.log($('#search').val());
+						$('#images').empty();
+
+
+						$.each(data.items,function(){
+							appendElement(this.media.m)
+						//$.each(data.items,function(index, obj){
+						//appendElement(data.items[index].media.m)
+						
+					})
+				});
+				
+			})
+		})
+
+		function appendElement(data) {
+            let html = "";
+            html = "<img src="+ data +">";
+            
+            $('#images').append(html); 
+        }
+
+		
+	
+	</script>
+</head>
+<body>
+	<input type="text" id="search">
+	<input type="button" id="btn" value="검색">
+	<div id="images">
+
+	</div>
+</body>
+</html>

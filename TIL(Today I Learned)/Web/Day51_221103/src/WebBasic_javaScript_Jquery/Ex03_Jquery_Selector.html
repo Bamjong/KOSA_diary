@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body > *').css("color","gold"); //자식 선택자
+            $('div > *').css('color','red');
+            $('input[type=text]').css("color","green");
+
+            /*
+                DOM script: text, value (innerHTML, innerText)
+
+                Jquery
+                3개함수 (val(), text(), html()) > 값을 read, write > getter, setter
+                ex) val('홍길동') > write(setter)
+                ex) val() > read(getter)
+
+                jquery id 활용
+                <input type="text" id="userid" value="aaa">
+                >> $('#userid').val() >> aaa 값을 받을 수 있다.
+
+                <input type="text" id="userid" value="aaa">
+                >> $('#userid').val("bbb") >> bbb 값을 바꾼다.
+
+                DOM> document.getElementById("userid").value="bbb";
+            */
+           // ***** write 모든 요소 적용가능
+           $('input[type=text]').val("hong");
+           $('input[type=password]').val("11111");
+           $('tr:odd').css("background","gray"); //1,3,5,...
+           $('tr:even').css("background","pink"); //0,2,4,...
+
+           // ***** read 처음 만나는 요소
+           console.log($('input[type=text]').val()) //hong 하나만 나옴
+
+
+           setTimeout(() => {
+                let value = $('select > option:selected').val();
+                alert("select tag value: " + value);
+           }, 3000);
+        })
+    </script>
+</head>
+<body>
+    <div>
+		<ul>
+			<li>사과</li>
+			<li>배</li>
+			<li>수박</li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li>사과2</li>
+			<li>배2</li>
+			<li>수박2</li>
+		</ul>
+	</div>
+	<input type="text" value="AAA">
+	<input type="text" value="BBB">
+	<input type="text" value="CCC">
+	<input type="password">
+	<input type="radio">
+	<input type="file">
+	<hr>
+	<table>
+		<tr>
+			<td>이름</td>
+			<td>나이</td>
+			<td>취미</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>50</td>
+			<td>훔치기</td>
+		</tr>
+		<tr>
+			<td>이순신</td>
+			<td>10</td>
+			<td>싸움</td>
+		</tr>
+		<tr>
+			<td>학생</td>
+			<td>30</td>
+			<td>잠자기</td>
+		</tr>
+	</table>
+	<hr>
+	<select>
+		<option>농구</option>
+		<option>축구</option>
+		<option>야구</option>
+		<option>배구</option>
+	</select>
+</body>
+</html>

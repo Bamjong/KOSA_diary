@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript">
+		
+		
+		$(function() {
+			/*
+			jQuery.post( url [, data ] [, success ] [, dataType ] )	
+			
+			
+			1. bad (가장 나쁜방법)
+			$.post("Ex05_Server.jsp?name=hong&pwd=1004....")
+			
+			2. 
+			const name = $('#name'.val());
+			const pwd = $('#pwd'.val());
+			const param = "name="+name+ "&pwd="+pwd; 
+			$.post("Ex05_Server.jsp",param)
+			
+			3. json객체 parameter
+			const data = {"name" : $('#name').val(),
+							"pwd" : $('#pwd').val()}
+			$.post("Ex05_Server.jsp", data)		
+			*/
+			
+			$('#btn').click(function() {
+				const data = {"name" : $('#name').val(),
+							"pwd" : $('#pwd').val()}
+				$.post("Ex05_Server.jsp",data,function(responsedata){
+					//응답이 왔고 정상 건 이라면
+					$('#message').html(responsedata);
+				});
+			})
+		})
+
+
+</script>
+</head>
+<body>
+	이름: <input type="text" id="name"><br>
+	비번: <input type="password" id="pwd"><br>
+	<input type="button" id="btn" value="비동기 전송"><br>
+	<hr>
+	<div id="message"></div>
+</body>
+</html>

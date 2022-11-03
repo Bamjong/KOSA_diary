@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+
+    <script>
+        let addr = "http://openapi.seoul.go.kr:8088/684e43655a716a613835454776764d/json/tbCycleStationInfo/1/100/";
+
+        $(function(){
+            $('#btn').click(function(){
+            $.getJSON(addr,function(data){
+                        
+						console.log(data);
+						console.log(data.stationInfo.row[0].STA_ADD1)
+						
+					})
+            })
+
+        })
+
+
+
+    </script>
+</head>
+<body>
+    <input type="text" id="search">
+    <input type="button" id="btn" value="검색">
+</body>
+</html>

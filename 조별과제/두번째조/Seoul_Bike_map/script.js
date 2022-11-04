@@ -7,7 +7,7 @@ $('#btn').click(function(){
     
     //서울시 공공데이터 공공자전거 json링크
     console.log($('#search').val());
-    const api = "http://openapi.seoul.go.kr:8088/5277726450716a61373762714d4170/json/tbCycleStationInfo/1/" + $('#search').val();
+    const api = "http://openapi.seoul.go.kr:8088/키입력/json/tbCycleStationInfo/1/" + $('#search').val();
     
     $.getJSON(api, function(data){
        

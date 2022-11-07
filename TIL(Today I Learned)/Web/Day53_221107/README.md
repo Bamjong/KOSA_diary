@@ -34,7 +34,7 @@ Updated Time: 2022년 11월 7일 오후 9:14
     - url 방식     : 글쓰기([wrtie.do?id=hihi&pwd=1004](http://wrtie.do/?id=hihi&pwd=1004)), 글목록보기([list.do](http://list.do/)) >> url 주소로 요청을 판단
     주의) url패턴 >> * do
 
-[https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fm1.daumcdn.net%2Fcfile234%2FR400x0%2F13705949504C57EB0E1B72%22&type=cafe_wa740](https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fm1.daumcdn.net%2Fcfile234%2FR400x0%2F13705949504C57EB0E1B72%22&type=cafe_wa740)
+![https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fm1.daumcdn.net%2Fcfile234%2FR400x0%2F13705949504C57EB0E1B72%22&type=cafe_wa740](https://dthumb-phinf.pstatic.net/?src=%22http%3A%2F%2Fm1.daumcdn.net%2Fcfile234%2FR400x0%2F13705949504C57EB0E1B72%22&type=cafe_wa740)
 
 MVC패턴의 장점)
 
@@ -159,7 +159,7 @@ filter란 http의 요청과 응답을 변경할 수 있는 재사용 가능한 �
     필터가 웹 콘테이너에서 삭제될 때 호출된다.
     
 
-[https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdthumb-phinf.pstatic.net%2F%3Fsrc%3D%2522https%253A%252F%252Fdthumb-phinf.pstatic.net%252F%253Fsrc%253D%252522http%25253A%25252F%25252Fcafeptthumb3.phinf.naver.net%25252F20130909_298%25252Fzeroday7_1378703968186yiYWO_GIF%25252Ffilter.gif%25253Ftype%25253Dw740%252522%2526amp%253Btype%253Dcafe_wa740%2522%26amp%3Btype%3Dcafe_wa740%22&type=cafe_wa800](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdthumb-phinf.pstatic.net%2F%3Fsrc%3D%2522https%253A%252F%252Fdthumb-phinf.pstatic.net%252F%253Fsrc%253D%252522http%25253A%25252F%25252Fcafeptthumb3.phinf.naver.net%25252F20130909_298%25252Fzeroday7_1378703968186yiYWO_GIF%25252Ffilter.gif%25253Ftype%25253Dw740%252522%2526amp%253Btype%253Dcafe_wa740%2522%26amp%3Btype%3Dcafe_wa740%22&type=cafe_wa800)
+![https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdthumb-phinf.pstatic.net%2F%3Fsrc%3D%2522https%253A%252F%252Fdthumb-phinf.pstatic.net%252F%253Fsrc%253D%252522http%25253A%25252F%25252Fcafeptthumb3.phinf.naver.net%25252F20130909_298%25252Fzeroday7_1378703968186yiYWO_GIF%25252Ffilter.gif%25253Ftype%25253Dw740%252522%2526amp%253Btype%253Dcafe_wa740%2522%26amp%3Btype%3Dcafe_wa740%22&type=cafe_wa800](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdthumb-phinf.pstatic.net%2F%3Fsrc%3D%2522https%253A%252F%252Fdthumb-phinf.pstatic.net%252F%253Fsrc%253D%252522http%25253A%25252F%25252Fcafeptthumb3.phinf.naver.net%25252F20130909_298%25252Fzeroday7_1378703968186yiYWO_GIF%25252Ffilter.gif%25253Ftype%25253Dw740%252522%2526amp%253Btype%253Dcafe_wa740%2522%26amp%3Btype%3Dcafe_wa740%22&type=cafe_wa800)
 
 ## 3.1 Filter 적용방법
 

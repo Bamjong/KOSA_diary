@@ -16,7 +16,7 @@ Updated Time: 2022년 11월 7일 오후 9:14
 - View
     1. html or jsp > 구분점은? : UI 데이터 출력 유무 > Boot > include > 모든페이지 > JSP
     2. EL & JSTL > server에서 데이터 담아서 (request) > forward > 그 request 객체 ...
-    ex) ${requestScope.list) or ${[sessionScope.id](http://sessionscope.id/)} >> 출력(JSTL)
+    ex) ${requestScope.list} or ${sessionScope.id} >> 출력(JSTL)
     3. JSP 보안적 처리 > WEB-INF > view > member or admin or board > jsp 관리
     4. 비동기처리(ajax) > xmlHttpRequest
     

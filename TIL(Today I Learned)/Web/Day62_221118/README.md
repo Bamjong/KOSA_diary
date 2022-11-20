@@ -17,7 +17,7 @@ Updated Time: 2022년 11월 21일 오전 3:22
 
 - 자유게시판 리스트 제작
 
-![Untitled](%F0%9F%93%9A%20Day62_221118%204a3f01563dc443a4b7f88dd82e37879e/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/92353613/202919830-58aa21db-a220-42af-9278-81bc103903d7.png)
 
 # 2. ajax 비동기 처리 공부
 

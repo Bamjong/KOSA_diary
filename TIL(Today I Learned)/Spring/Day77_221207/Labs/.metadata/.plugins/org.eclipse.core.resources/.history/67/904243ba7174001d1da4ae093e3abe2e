@@ -1,0 +1,74 @@
+[DI개념] : 의존성 주입(의존 객체 주입)
+프로젝트 >> 수 많은 클래스 생성 >> 클래스들간의 관계를 통해 구현
+
+1. 상속 (is ~ a)
+2. 포함 (has ~ a)
+
+A라는 클래스는 B라는 클래스가 필요하다
+
+프로그래밍 적으로 풀면(A는 B의 자원을 사용가능)
+
+class A extends B {} //상속
+
+class A {
+	B b = new B(); //포함
+}
+main >> A a new A();		a.b 자원접근
+
+
+class A {
+	B b;
+	A(B b){		//생성자를 통해서 의존객체의 주소값 찾기
+	this.b = b;
+	}
+}
+main >>B b = new B(); A a = new A(b);
+
+class A {
+	public B print(B b){ //의존 (함수에서 전제조건)
+		return b;
+	}
+}
+main >> A a = new A(); a.print(new B());
+
+
+--나는 니가 필요해 (나는 너의 주소가 필요해)
+NewRecordView 클래스는 NeweRecord에 의존한다 (필요)
+NewRecordView 클래스가 필요한 객체를 [생성자]통해서 주입 또는 생성
+NewRecordView 클래스가 필요한 객ㅊ를 [생성자]통해서 생성 (두 객체의 lifecycle 동일)
+NewRecordView 클래스가 필요한 객체를 [생성자]통해서 주입 (두 객체의 lifecycle 동일하지 않다)
+
+DI (의존성 주입) : Spring 학습의 처음 나오는 개념
+result :  필요한 객체를 [생성자] 통해서 그 주소를 주입(또는 생성)
+----------------------------------------------------------------------------------------
+[DI개념]_2 : 의존성 주입(의존 객체 주입)
+-NewRecordView 클래스는 필요로 하는 객체를 setter 함수를 통해서 주입(주소를) 받아서 사용
+-객체의 생성이 서로 독립적 >> 필요시에 객체를 주입을 받을 수 있다
+ NewRecordView view = new NewRecordView();
+ NewRecord record = new NewRecord(100, 50, 50);
+-두 객체의 lifecycle은 같지 않다 >> 집합연관
+----------------------------------------------------------------------------------------
+시나리오
+class A, class B
+A라는 클래스가  B 클래스를 사용하는 방법
+
+1. 상속(is-a) >> Spring FrameWork 에서는 관심이 없어요
+
+2. 포함(has-a) > 내 클래스안에 다른 클래스가 들어오는 것
+ 2.1 [생성자]를 주입(constructor injection)
+ >> main 함수>> A a = new A();
+ 
+ class A { B b; A(){b = new B();} }
+ 
+ >A라는 클래스의 생성자에서 B라는 객체 생성 사용 (복합연관)
+ 
+ 2.2 setter 함수를 통한 주입 (setter injection)
+ >> main함수 >> A a = new A(); B b = new B(); a.SetB(b);
+ 
+ class A {B b; A(){}; public void SetB(B b)(this.b = b;}}
+ 
+ Result: SpringFramework는 다른 객체의 의존(참조) 하기 위해서
+ 생성자주입(constructor injection), setter(setter injection) 주입 2가 방법을 통해서 구현
+ 기수를 통칭해서 >> DI(dependency injection) >> 의존성 주입 ^^
+ 
+ +알파

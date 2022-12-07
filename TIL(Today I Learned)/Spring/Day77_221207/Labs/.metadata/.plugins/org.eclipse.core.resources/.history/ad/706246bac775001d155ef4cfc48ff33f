@@ -1,0 +1,8 @@
+package DI_Annotation_04;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration  //DI_Config.xml과 같은 역할을함
+public class ConfigContext {
+
+}

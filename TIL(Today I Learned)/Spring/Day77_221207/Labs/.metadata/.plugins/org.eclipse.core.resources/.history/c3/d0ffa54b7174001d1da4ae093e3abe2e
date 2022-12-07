@@ -1,0 +1,6 @@
+package DI;
+
+public interface Record {
+	int total();
+	float avg();
+}

@@ -1,0 +1,12 @@
+package DI_06_Spring;
+
+public class HelloApp {
+	public static void main(String[] args) {
+		//Java 코드
+		
+	 	//OracleArticleDao articledao = new OracleArticleDao();
+	 	MysqlArticleDao articledao = new MysqlArticleDao();
+		ArticleService articleservice = new ArticleService(articledao);
+		Article article = new Article();
+	}
+}

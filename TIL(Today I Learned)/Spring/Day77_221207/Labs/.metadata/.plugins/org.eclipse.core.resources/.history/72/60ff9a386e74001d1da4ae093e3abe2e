@@ -1,0 +1,42 @@
+[DI개념] : 의존성 주입(의존 객체 주입)
+프로젝트 >> 수 많은 클래스 생성 >> 클래스들간의 관계를 통해 구현
+
+1. 상속 (is ~ a)
+2. 포함 (has ~ a)
+
+A라는 클래스는 B라는 클래스가 필요하다
+
+프로그래밍 적으로 풀면(A는 B의 자원을 사용가능)
+
+class A extends B {} //상속
+
+class A {
+	B b = new B(); //포함
+}
+main >> A a new A();		a.b 자원접근
+
+
+class A {
+	B b;
+	A(B b){		//생성자를 통해서 의존객체의 주소값 찾기
+	this.b = b;
+	}
+}
+main >>B b = new B(); A a = new A(b);
+
+class A {
+	public B print(B b){ //의존 (함수에서 전제조건)
+		return b;
+	}
+}
+main >> A a = new A(); a.print(new B());
+
+
+--나는 니가 필요해 (나는 너의 주소가 필요해)
+NewRecordView 클래스는 NeweRecord에 의존한다 (필요)
+NewRecordView 클래스가 필요한 객체를 [생성자]통해서 주입 또는 생성
+NewRecordView 클래스가 필요한 객ㅊ를 [생성자]통해서 생성 (두 객체의 lifecycle 동일)
+NewRecordView 클래스가 필요한 객체를 [생성자]통해서 주입 (두 객체의 lifecycle 동일하지 않다)
+
+DI (의존성 주입) : Spring 학습의 처음 나오는 개념
+result :  필요한 객체를 [생성자] 통해서 그 주소를 주입(또는 생성)

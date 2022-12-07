@@ -1,0 +1,8 @@
+package DI_11_Spring;
+
+public class DataSourceFactory {
+	private String jdbcdriver;
+	private String jdbcurl;
+	private String username;
+	
+}

@@ -1,0 +1,17 @@
+package DI_08_Spring;
+
+public class HelloApp {
+	public static void main(String[] args) {
+		
+		JobExecute jobexecute = new JobExecute("hong", 100);
+		
+		JobExecute jobexecute2 = new JobExecute("kim", 1000L);
+		
+		JobExecute jobexecute3 = new JobExecute("lim", "hong");
+		
+		ArticleDao articledao = new ArticleDao();
+		jobexecute.setArticledao(articledao);
+		
+		jobexecute.setData(500);
+	}
+}

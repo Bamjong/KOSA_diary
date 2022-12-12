@@ -3,7 +3,7 @@
 Author: 고범종
 Created Time: 2022년 12월 12일 오전 9:24
 Status: 🖨 Published
-Updated Time: 2022년 12월 12일 오후 8:59
+Updated Time: 2022년 12월 13일 오전 1:34
 
 # 1. Jdbc, tx(트랜젝션) 추가
 
@@ -377,7 +377,10 @@ public class MemberDAOImpl implements MemberDAO{
 	      return result;
 	   }
 
-		
+		//쿼리문 하나만 받을경우 DTO만 선언하면 다 받을 수 있음
+		//써보진 않았지만 list로 받으면 쭉쭉 받을 수 있을거 같음
+		//queryForObject이건 하나만 받을때
+		//queryForList 이건 List 형식으로 받을때
 	   @Override
 	   public MemberVO selectMemberById(String id) throws SQLException {
 		   
@@ -402,3 +405,51 @@ public class MemberDAOImpl implements MemberDAO{
 
 }
 ```
+
+JoinController.java
+
+```java
+@Controller
+public class JoinController {
+
+	---------------------------------------------------------
+	MemberDAO를 사용하기 위해 setter로 주입
+	private MemberDAO memberdao;
+
+	@Autowired  //by type
+	public void setMemberdao(MemberDAO memberdao) {
+		this.memberdao = memberdao;
+	}
+	---------------------------------------------------------
+	
+	@GetMapping("/join.do")
+	public String form() {
+		return "joinForm";
+	}
+ 
+	@PostMapping("/join.do")
+	public String sumbit(@RequestParam(value="id", required = true) String id,
+						 @RequestParam(value="name") String name,
+						 @RequestParam(value="pwd")  String pwd,
+						 @RequestParam(value="email" ,defaultValue = "1@1") String email,
+						 @RequestParam(value="age" , defaultValue = "1") Integer age) {
+
+	
+		System.out.println(id + "." + name + "." + pwd + "." + email + "." + age);
+		String view = null;
+		boolean joinresult = memberdao.memberInsert(id, name, pwd, email, age);
+		
+		if(joinresult) {
+			view = "joinSuccess";
+		}else {
+			view = "joinForm";
+		}
+		
+		return view;
+
+	}
+	
+}
+```
+
+이런식으로 흘러가고 이후로의 service 단을 알아서 흘러흘러 가게된다

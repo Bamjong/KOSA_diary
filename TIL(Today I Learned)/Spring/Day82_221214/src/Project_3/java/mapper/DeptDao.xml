@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  
+[key point]
+Mybatis 사용 프로젝트 진행시
+
+1. mapper namespace 이름 : DAO 가지는 interface 이름을 그대로
+2. <select id="" 이름을  interface 가지는 함수명과 동일
+result : interface 와 mapper 있으면 실행
+	
+	//전체 게시물
+	List<Notice> getNotices(int page, String field, String query) throws ClassNotFoundException, SQLException;
+	
+	//게시물 상세
+	Notice getNotice(String seq) throws ClassNotFoundException, SQLException;
+	
+	
+	//게시물 삭제
+	int delete(String seq) throws ClassNotFoundException, SQLException;
+	
+	//게시물 수정
+	int update(Notice notice) throws ClassNotFoundException, SQLException;
+	
+	
+	
+	//게시물 입력
+	int insert(Notice n) throws ClassNotFoundException, SQLException;
+-->
+
+<mapper namespace="dao.DeptDao">
+	
+	
+	
+	<select id="getDepts" resultType="vo.Dept">
+	select * from dept
+	</select>
+	
+
+	<select id="getDept" resultType="vo.Dept">
+		 select seq , title , writer , content , regdate , hit , fileSrc , fileSrc2
+		 from notices
+		 where seq=#{seq}
+	</select>
+	
+	
+	<delete id="delete">
+		delete from notices where seq=#{seq}
+	</delete>
+	
+	<!-- 
+	int update(Notice notice) 
+	게시물 수정
+	파일 수정: null , null
+	1개 수정 : 1.jpg, null
+	1개 수정 : null , 2.jpg
+	특정한 값이 넘어오지 않으면 null값 처리
+	>> filesrc=#{fileSrc, jdbcType = VARCHAR},
+	 -->
+	<update id="update" parameterType="vo.Dept">
+	  update notices
+	  set   title=#{title},
+	  		content=#{content},
+	  		filesrc=#{fileSrc, jdbcType = VARCHAR},
+	 		filesrc2=#{fileSrc2,jdbcType=VARCHAR}
+	  where seq=#{seq}
+	</update>
+	
+
+	<insert id="insert" parameterType="vo.Dept">
+		insert into dept(deptno, dname, loc) values(#{dept},#{dname},#{loc})
+	</insert>
+</mapper>
+
+
+
+
+
